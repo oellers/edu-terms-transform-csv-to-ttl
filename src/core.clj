@@ -11,10 +11,8 @@
           data (nthrest rows 2)]
       (mapv #(zipmap headers (map (fn [value] (if (clojure.string/blank? value) nil value)) %)) data))))
 
-(comment
-  (read-csv "resources/test.csv"))
-
 (def base-uri "http://example.org/")
+
 (def prefixes
   {"dct" "http://purl.org/dc/terms/"
    "sdo" "https://schema.org/"
@@ -65,10 +63,7 @@
     (write-rdf triples output-rdf)))
 
 (comment
-  (convert-csv-to-rdf "resources/Vokabulare.csv" "resources/Vokabulare.ttl")
-  (convert-csv-to-rdf "resources/test.csv" "resources/test.ttl"))
+  (convert-csv-to-rdf "resources/Vokabulare.csv" "resources/Vokabulare.ttl"))
 
 (defn -main [& args]
-  (println "Called from -main with args:" (first args) (second args))
-
   (convert-csv-to-rdf (first args) (second args)))

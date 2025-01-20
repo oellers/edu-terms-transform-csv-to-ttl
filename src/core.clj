@@ -8,15 +8,17 @@
   (with-open [reader (io/reader file-path)]
     (let [rows (csv/read-csv reader)
           headers (map keyword (second rows))
-          data (nthrest rows 2)]
+          data (nthrest rows 3)]
       (mapv #(zipmap headers (map (fn [value] (if (clojure.string/blank? value) nil value)) %)) data))))
 
 (def base-uri "http://example.org/")
 
 (def prefixes
-  {"dct" "http://purl.org/dc/terms/"
+  {"rdf" "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   "dct" "http://purl.org/dc/terms/"
    "sdo" "https://schema.org/"
    "wdt" "http://www.wikidata.org/prop/direct/"
+   "wd"  "http://www.wikidata.org/entity/"
    "xsd" "http://www.w3.org/2001/XMLSchema#"})
 
 (defn make-uri [suffix]
@@ -36,9 +38,13 @@
    [:format "http://www.wikidata.org/prop/direct/P2701" #(gpr/->LangString % :de)]])
 
 (defn row-to-triples [row]
-  (let [entity-uri (make-uri (get row :id))]
+  (let [entity-uri (make-uri (get row :id))
+        type-triple (gpr/->Triple
+                     entity-uri
+                     (java.net.URI. (str (prefixes "rdf") "type"))
+                     (java.net.URI. (str (prefixes "wd") "Q1469824")))]
     (loop [fields fields
-           triples []]
+           triples [type-triple]]
       (if (empty? fields)
         triples
         (let [[field uri tfn] (first fields)

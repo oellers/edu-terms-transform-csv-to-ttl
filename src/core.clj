@@ -33,7 +33,7 @@
    [:maintained_by "http://www.wikidata.org/prop/direct/P126" #(gpr/->LangString % :de)]
    [:used_by "http://www.wikidata.org/prop/direct/P1535" #(gpr/->LangString % :de)]
    [:repo "http://www.wikidata.org/prop/direct/P1324" #(gpr/->LangString % :de)]
-   [:educational_stage "http://www.wikidata.org/prop/direct/P7374" #(gpr/->LangString % :de)]
+   [:educationalLevel "https://schema.org/educationalLevel" #(gpr/->LangString % :de)]
    [:complies_with "http://www.wikidata.org/prop/direct/P5009" #(gpr/->LangString % :de)]])
 
 (def dist-lookup-map

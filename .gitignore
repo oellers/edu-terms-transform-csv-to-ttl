@@ -1,0 +1,54 @@
+# Clojure-specific
+.libs/
+classes/
+repl-history
+/.nrepl-port
+
+# Dependency management
+/.cpcache/
+
+# Logs and output
+/log/
+/*.log
+/tmp/
+/out/
+/target/
+
+# Editor files
+/.idea/
+/*.iml
+*~
+\#*\#
+.\#*
+*.swp
+*.swo
+*.un~
+.vscode/
+.project
+.classpath
+.csettings/
+*.sublime-workspace
+*.sublime-project
+
+# Operating system files
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Desktop.ini
+
+# Build files
+*.jar
+*.war
+*.ear
+*.zip
+*.class
+*.clj~
+
+# Tool-specific
+.lein-repl-history
+/.lein-deps-sum
+.shadow-cljs/
+/.boot/
+/.bb-cache/
+

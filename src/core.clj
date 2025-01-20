@@ -34,17 +34,57 @@
    [:used_by "http://www.wikidata.org/prop/direct/P1535" #(gpr/->LangString % :de)]
    [:repo "http://www.wikidata.org/prop/direct/P1324" #(gpr/->LangString % :de)]
    [:educational_stage "http://www.wikidata.org/prop/direct/P7374" #(gpr/->LangString % :de)]
-   [:complies_with "http://www.wikidata.org/prop/direct/P5009" #(gpr/->LangString % :de)]
-   [:format "http://www.wikidata.org/prop/direct/P2701" #(gpr/->LangString % :de)]])
+   [:complies_with "http://www.wikidata.org/prop/direct/P5009" #(gpr/->LangString % :de)]])
+
+(def dist-lookup-map
+  {:json :contentUrlJSON
+   :ttl :contentUrlTTL})
+
+(defn make-distribution-triples [entity-uri row]
+  (loop [formats [:json :ttl]
+         triples []]
+    (if (empty? formats)
+      triples
+      (if (clojure.string/blank? (get row (get dist-lookup-map (first formats))))
+        (recur (rest formats) triples)
+        (let [format (first formats)
+              blank-resource (gpr/make-blank-node)
+              b-triple (gpr/->Triple
+                        blank-resource
+                        (java.net.URI. (str (prefixes "sdo") "contentUrl"))
+                        (java.net.URI. (get row (get dist-lookup-map format))))
+              data-download-triple (gpr/->Triple
+                                    blank-resource
+                                    (java.net.URI. (str (prefixes "rdf") "type"))
+                                    (java.net.URI. (str (prefixes "sdo") "DataDownload")))
+              file-format-triple (gpr/->Triple
+                                  blank-resource
+                                  (java.net.URI. (str (prefixes "sdo") "fileFormat"))
+                                  (gpr/literal
+                                   (case format
+                                     :json "application/json"
+                                     :ttl "text/turtle")
+                                   "http://www.w3.org/2001/XMLSchema#string"))
+              dist-triple (gpr/->Triple
+                           entity-uri
+                           (java.net.URI. (str (prefixes "sdo") "distribution"))
+                           blank-resource)]
+          (recur (rest formats) (conj
+                                 triples
+                                 b-triple
+                                 data-download-triple
+                                 file-format-triple
+                                 dist-triple)))))))
 
 (defn row-to-triples [row]
   (let [entity-uri (make-uri (get row :id))
         type-triple (gpr/->Triple
                      entity-uri
                      (java.net.URI. (str (prefixes "rdf") "type"))
-                     (java.net.URI. (str (prefixes "wd") "Q1469824")))]
+                     (java.net.URI. (str (prefixes "wd") "Q1469824")))
+        distribution-triples (make-distribution-triples entity-uri row)]
     (loop [fields fields
-           triples [type-triple]]
+           triples (concat [type-triple] distribution-triples)]
       (if (empty? fields)
         triples
         (let [[field uri tfn] (first fields)
@@ -67,9 +107,6 @@
 (defn convert-csv-to-rdf [input-csv output-rdf]
   (let [triples (csv-to-rdf input-csv)]
     (write-rdf triples output-rdf)))
-
-(comment
-  (convert-csv-to-rdf "resources/Vokabulare.csv" "resources/Vokabulare.ttl"))
 
 (defn -main [& args]
   (convert-csv-to-rdf (first args) (second args)))

@@ -6,186 +6,216 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://example.org/1> a wd:Q1469824;
-  sdo:name "Schulfächer"@de;
-  sdo:description "Werteliste von Fächern im Schulbereich."@de;
-  sdo:about "Fach- und Themenzuordnung"@de;
-  dct:issued "2021-03-03"^^xsd:date;
-  wdt:P973 <http://w3id.org/kim/schulfaecher/>;
-  wdt:P126 "DINI-AG-KIM"@de;
-  wdt:P1324 "https://github.com/dini-ag-kim/schulfaecher"@de;
-  wdt:P7374 "Schule"@de;
   wdt:P5009 "SKOS"@de;
-  wdt:P2701 "Turtle"@de .
+  wdt:P7374 "Schule"@de;
+  wdt:P1324 "https://github.com/dini-ag-kim/schulfaecher"@de;
+  wdt:P126 "DINI-AG-KIM"@de;
+  wdt:P973 <http://w3id.org/kim/schulfaecher/>;
+  dct:issued "2021-03-03"^^xsd:date;
+  sdo:about "Fach- und Themenzuordnung"@de;
+  sdo:description "Werteliste von Fächern im Schulbereich."@de;
+  sdo:name "Schulfächer"@de;
+  sdo:distribution _:G__2365, _:G__2366 .
+
+_:G__2365 a sdo:DataDownload;
+  sdo:contentUrl <http://w3id.org/kim/schulfaecher/index.json>;
+  sdo:fileFormat "application/json" .
+
+_:G__2366 a sdo:DataDownload;
+  sdo:contentUrl <https://raw.githubusercontent.com/dini-ag-kim/schulfaecher/refs/heads/main/schulfaecher.ttl>;
+  sdo:fileFormat "text/turtle" .
 
 <http://example.org/2> a wd:Q1469824;
-  sdo:name "Schulfächer"@de;
-  sdo:description "Werteliste von Fächern im Schulbereich."@de;
-  sdo:about "Fach- und Themenzuordnung"@de;
-  dct:issued "2020-04-08"^^xsd:date;
-  wdt:P973 <http://w3id.org/openeduhub/vocabs/discipline/>;
-  wdt:P126 "WirLernenOnline"@de;
-  wdt:P1324 "https://github.com/openeduhub/oeh-metadata-vocabs"@de;
-  wdt:P7374 "Schule"@de;
   wdt:P5009 "SKOS"@de;
-  wdt:P2701 "Turtle"@de .
+  wdt:P7374 "Schule"@de;
+  wdt:P1324 "https://github.com/openeduhub/oeh-metadata-vocabs"@de;
+  wdt:P126 "WirLernenOnline"@de;
+  wdt:P973 <http://w3id.org/openeduhub/vocabs/discipline/>;
+  dct:issued "2020-04-08"^^xsd:date;
+  sdo:about "Fach- und Themenzuordnung"@de;
+  sdo:description "Werteliste von Fächern im Schulbereich."@de;
+  sdo:name "Schulfächer"@de;
+  sdo:distribution _:G__2367, _:G__2368 .
+
+_:G__2367 a sdo:DataDownload;
+  sdo:contentUrl <https://w3id.org/openeduhub/vocabs/discipline/index.json>;
+  sdo:fileFormat "application/json" .
+
+_:G__2368 a sdo:DataDownload;
+  sdo:contentUrl <https://raw.githubusercontent.com/openeduhub/oeh-metadata-vocabs/refs/heads/master/discipline.ttl>;
+  sdo:fileFormat "text/turtle" .
 
 <http://example.org/3> a wd:Q1469824;
-  sdo:name "Schulfächer"@de;
-  sdo:about "Fach- und Themenzuordnung"@de;
-  wdt:P973 <https://vocabs.sodix.de/index.html>;
+  wdt:P7374 "Schule"@de;
   wdt:P126 "FWU"@de;
-  wdt:P7374 "Schule"@de .
+  wdt:P973 <https://vocabs.sodix.de/index.html>;
+  sdo:about "Fach- und Themenzuordnung"@de;
+  sdo:name "Schulfächer"@de .
 
 <http://example.org/4> a wd:Q1469824;
-  sdo:name "Schulfächer"@de;
-  sdo:description "Fächer und Themen bei digital learning tools."@de;
-  sdo:about "Fach- und Themenzuordnung"@de;
-  wdt:P973 <https://digitallearningtools.de/api/subjects?q=>;
-  wdt:P126 "Digital Learning Tools"@de;
-  wdt:P7374 "Schule"@de;
   wdt:P5009 "Web-API"@de;
-  wdt:P2701 "Json"@de .
+  wdt:P7374 "Schule"@de;
+  wdt:P126 "Digital Learning Tools"@de;
+  wdt:P973 <https://digitallearningtools.de/api/subjects?q=>;
+  sdo:about "Fach- und Themenzuordnung"@de;
+  sdo:description "Fächer und Themen bei digital learning tools."@de;
+  sdo:name "Schulfächer"@de .
 
 <http://example.org/5> a wd:Q1469824;
-  sdo:name "EUN Fächer Werte"@de;
-  sdo:description "Dieses Wörterverzeichnis ist eine Unterliste des LRE Thesaurus."@de;
-  sdo:about "Fach- und Themenzuordnung"@de;
-  wdt:P973 <http://europeanschoolnet-vbe.lexaurus.net/vbe/browse>;
-  wdt:P126 "European Schoolnet Vocabulary Bank for Education (VBE)"@de;
-  wdt:P7374 "Schule"@de;
   wdt:P5009 "SKOS"@de;
-  wdt:P2701 "XML"@de .
+  wdt:P7374 "Schule"@de;
+  wdt:P126 "European Schoolnet Vocabulary Bank for Education (VBE)"@de;
+  wdt:P973 <http://europeanschoolnet-vbe.lexaurus.net/vbe/browse>;
+  sdo:about "Fach- und Themenzuordnung"@de;
+  sdo:description "Dieses Wörterverzeichnis ist eine Unterliste des LRE Thesaurus."@de;
+  sdo:name "EUN Fächer Werte"@de .
 
 <http://example.org/6> a wd:Q1469824;
-  sdo:name "Verzeichnis der Ausbildungsberufe"@de;
-  sdo:description "Das Verzeichnis führt alle 327 anerkannten Ausbildungsberufe in Industrie und Handwerk, im öffentlichen Dienst, in der Hauswirtschaft, der Landwirtschaft, der Seeschifffahrt und in den freien Berufen auf. Zum Ausbildungsbeginn 2022 traten zwei neue Berufe – Binnenschifffahrtskapitän/-in und Fachkraft Küche – und zwölf modernisierte Ausbildungsberufe in Kraft. Zu allen Berufen sind hier u.a. Ausbildungsdauer, Rechtsgrundlagen, Wahlqualifikationen oder Schwerpunkte sowie die Zuordnung zum Deutschen Qualifikationsrahmen (DQR) verzeichnet. Der statistische Teil liefert Angaben zur Anzahl und zur quantitativen Entwicklung der Ausbildungsberufe sowie zur Zahl der Auszubildenden seit 1970. Das Verzeichnis wird seit 1977 vom Bundesinstitut für Berufsbildung herausgegeben und erscheint jährlich. "@de;
-  sdo:about "Fach- und Themenzuordnung"@de;
-  dct:issued "2023-03-01"^^xsd:date;
-  wdt:P973 <https://www.bibb.de/dienst/publikationen/de/19128>;
-  wdt:P126 "Bundesinstitut für Berufsbildung"@de;
   wdt:P7374 "Ausbildung"@de;
-  wdt:P2701 "PDF"@de .
+  wdt:P126 "Bundesinstitut für Berufsbildung"@de;
+  wdt:P973 <https://www.bibb.de/dienst/publikationen/de/19128>;
+  dct:issued "2023-03-01"^^xsd:date;
+  sdo:about "Fach- und Themenzuordnung"@de;
+  sdo:description "Das Verzeichnis führt alle 327 anerkannten Ausbildungsberufe in Industrie und Handwerk, im öffentlichen Dienst, in der Hauswirtschaft, der Landwirtschaft, der Seeschifffahrt und in den freien Berufen auf. Zum Ausbildungsbeginn 2022 traten zwei neue Berufe – Binnenschifffahrtskapitän/-in und Fachkraft Küche – und zwölf modernisierte Ausbildungsberufe in Kraft. Zu allen Berufen sind hier u.a. Ausbildungsdauer, Rechtsgrundlagen, Wahlqualifikationen oder Schwerpunkte sowie die Zuordnung zum Deutschen Qualifikationsrahmen (DQR) verzeichnet. Der statistische Teil liefert Angaben zur Anzahl und zur quantitativen Entwicklung der Ausbildungsberufe sowie zur Zahl der Auszubildenden seit 1970. Das Verzeichnis wird seit 1977 vom Bundesinstitut für Berufsbildung herausgegeben und erscheint jährlich. "@de;
+  sdo:name "Verzeichnis der Ausbildungsberufe"@de .
 
 <http://example.org/7> a wd:Q1469824;
-  sdo:name "Hochschulfächersystematik"@de;
-  sdo:description "Diese SKOS-Klassifikation basiert auf der Destatis-\"Systematik der Fächergruppen, Studienbereiche und Studienfächer\"."@de;
-  sdo:about "Fach- und Themenzuordnung"@de;
-  dct:issued "2019-12-11"^^xsd:date;
-  wdt:P973 <https://w3id.org/kim/hochschulfaechersystematik/scheme>;
-  wdt:P126 "DINI-AG-KIM"@de;
-  wdt:P7374 "Hochschule"@de;
   wdt:P5009 "SKOS"@de;
-  wdt:P2701 "Turtle"@de .
+  wdt:P7374 "Hochschule"@de;
+  wdt:P126 "DINI-AG-KIM"@de;
+  wdt:P973 <https://w3id.org/kim/hochschulfaechersystematik/scheme>;
+  dct:issued "2019-12-11"^^xsd:date;
+  sdo:about "Fach- und Themenzuordnung"@de;
+  sdo:description "Diese SKOS-Klassifikation basiert auf der Destatis-\"Systematik der Fächergruppen, Studienbereiche und Studienfächer\"."@de;
+  sdo:name "Hochschulfächersystematik"@de;
+  sdo:distribution _:G__2369, _:G__2370 .
+
+_:G__2369 a sdo:DataDownload;
+  sdo:contentUrl <https://w3id.org/kim/hochschulfaechersystematik/scheme.json>;
+  sdo:fileFormat "application/json" .
+
+_:G__2370 a sdo:DataDownload;
+  sdo:contentUrl <https://raw.githubusercontent.com/dini-ag-kim/hochschulfaechersystematik/refs/heads/master/hochschulfaechersystematik.ttl>;
+  sdo:fileFormat "text/turtle" .
 
 <http://example.org/8> a wd:Q1469824;
-  sdo:name "ELIXIER-Systematik"@de;
-  sdo:description "Systematik des Bildungsservers."@de;
-  sdo:about "Fach- und Themenzuordnung"@de;
-  wdt:P973 <https://web.archive.org/web/20221006161235/https://www.bildungsserver.de/elixier/elixiersystematikliste.php>;
-  wdt:P126 "DIPF"@de;
   wdt:P7374 "Schule"@de;
-  wdt:P2701 "Text"@de .
+  wdt:P126 "DIPF"@de;
+  wdt:P973 <https://web.archive.org/web/20221006161235/https://www.bildungsserver.de/elixier/elixiersystematikliste.php>;
+  sdo:about "Fach- und Themenzuordnung"@de;
+  sdo:description "Systematik des Bildungsservers."@de;
+  sdo:name "ELIXIER-Systematik"@de .
 
 <http://example.org/9> a wd:Q1469824;
-  sdo:name "Sachgebietssystematik AG-MUD"@de;
-  sdo:description "Die bundeseinheitliche Sachgebietssystematik ordnet die Medien den wesentlichen Schulfächern und anderen wichtigen Bildungszielen und -bereichen zu. SachgebietssystematikIhre hierarchische Gliederung erlaubt die Selektion und den Ausdruck von Medienlisten und Verzeichnissen mit unterschiedlicher Informationsdichte. Für Medienzentren und Schulen ist sie zur Strukturierung des eigenen Bestands unverzichtbar. Die bundeseinheitliche Sachgebietssystematik wurde in den 1990er Jahren von der AG Mediendistribution und Dokumentation entwickelt und wird ständig aktualisiert."@de;
-  sdo:about "Fach- und Themenzuordnung"@de;
-  wdt:P973 <https://vocabs.sodix.de/sodix/educational/sachgebietssystematik/sachgebietssystematik>;
+  wdt:P7374 "Schule"@de;
   wdt:P126 "SODIX/FWU"@de;
-  wdt:P7374 "Schule"@de .
+  wdt:P973 <https://vocabs.sodix.de/sodix/educational/sachgebietssystematik/sachgebietssystematik>;
+  sdo:about "Fach- und Themenzuordnung"@de;
+  sdo:description "Die bundeseinheitliche Sachgebietssystematik ordnet die Medien den wesentlichen Schulfächern und anderen wichtigen Bildungszielen und -bereichen zu. SachgebietssystematikIhre hierarchische Gliederung erlaubt die Selektion und den Ausdruck von Medienlisten und Verzeichnissen mit unterschiedlicher Informationsdichte. Für Medienzentren und Schulen ist sie zur Strukturierung des eigenen Bestands unverzichtbar. Die bundeseinheitliche Sachgebietssystematik wurde in den 1990er Jahren von der AG Mediendistribution und Dokumentation entwickelt und wird ständig aktualisiert."@de;
+  sdo:name "Sachgebietssystematik AG-MUD"@de;
+  sdo:distribution _:G__2371 .
+
+_:G__2371 a sdo:DataDownload;
+  sdo:contentUrl <https://vocabs.sodix.de/sodix/educational/sachgebietssystematik/sachgebietssystematik.json>;
+  sdo:fileFormat "application/json" .
 
 <http://example.org/10> a wd:Q1469824;
-  sdo:name "Taxonomie von Lehrplanthemen"@de;
-  sdo:description "Themenbaum von Lehrplanthemen."@de;
-  sdo:about "Fach- und Themenzuordnung"@de;
-  wdt:P973 <http://w3id.org/openeduhub/vocabs/oeh-topics/5e40e372-735c-4b17-bbf7-e827a5702b57>;
-  wdt:P126 "WirLernenOnline"@de;
+  wdt:P7374 "Schule"@de;
   wdt:P1324 "https://github.com/openeduhub/oeh-metadata-vocabs"@de;
-  wdt:P7374 "Schule"@de .
+  wdt:P126 "WirLernenOnline"@de;
+  wdt:P973 <http://w3id.org/openeduhub/vocabs/oeh-topics/5e40e372-735c-4b17-bbf7-e827a5702b57>;
+  sdo:about "Fach- und Themenzuordnung"@de;
+  sdo:description "Themenbaum von Lehrplanthemen."@de;
+  sdo:name "Taxonomie von Lehrplanthemen"@de;
+  sdo:distribution _:G__2372 .
+
+_:G__2372 a sdo:DataDownload;
+  sdo:contentUrl <http://w3id.org/openeduhub/vocabs/oeh-topics/5e40e372-735c-4b17-bbf7-e827a5702b57.json>;
+  sdo:fileFormat "application/json" .
 
 <http://example.org/11> a wd:Q1469824;
-  sdo:name "Subjects: Re3Data.org"@de;
-  sdo:description "Themenkatalog der Registry of Research Data Repositories."@de;
-  sdo:about "Fach- und Themenzuordnung"@de;
-  wdt:P973 <https://www.re3data.org/browse/by-subject/>;
+  wdt:P7374 "Bildungsbereichsübergreifend"@de;
   wdt:P126 "re3data"@de;
-  wdt:P7374 "Bildungsbereichsübergreifend"@de .
+  wdt:P973 <https://www.re3data.org/browse/by-subject/>;
+  sdo:about "Fach- und Themenzuordnung"@de;
+  sdo:description "Themenkatalog der Registry of Research Data Repositories."@de;
+  sdo:name "Subjects: Re3Data.org"@de .
 
 <http://example.org/12> a wd:Q1469824;
-  sdo:name "Subjects MARC21"@de;
-  sdo:description "Library of Congress Subject Headings (LCSH) has been actively maintained since 1898 to catalog materials held at the Library of Congress. By virtue of cooperative cataloging other libraries around the United States also use LCSH to provide subject access to their collections. In addition LCSH is used internationally, often in translation. LCSH in this service includes all Library of Congress Subject Headings, free-floating subdivisions (topical and form), Genre/Form headings, Children's (AC) headings, and validation strings* for which authority records have been created. The content includes a few name headings (personal and corporate), such as William Shakespeare, Jesus Christ, and Harvard University, and geographic headings that are added to LCSH as they are needed to establish subdivisions, provide a pattern for subdivision practice, or provide reference structure for other terms. This content is expanded beyond the print issue of LCSH (the \"red books\") with inclusion of validation strings. *Validation strings: Some authority records are for headings that have been built by adding subdivisions. These records are the result of an ongoing project to programmatically create authority records for valid subject strings from subject heading strings found in bibliographic records. The authority records for these subject strings were created so the entire string could be machine-validated. The strings do not have broader, narrower, or related terms."@de;
-  sdo:about "Fach- und Themenzuordnung"@de;
-  wdt:P973 <http://id.loc.gov/authorities/subjects>;
+  wdt:P7374 "Bildungsbereichsübergreifend"@de;
   wdt:P126 "Library Of Congress"@de;
-  wdt:P7374 "Bildungsbereichsübergreifend"@de .
+  wdt:P973 <http://id.loc.gov/authorities/subjects>;
+  sdo:about "Fach- und Themenzuordnung"@de;
+  sdo:description "Library of Congress Subject Headings (LCSH) has been actively maintained since 1898 to catalog materials held at the Library of Congress. By virtue of cooperative cataloging other libraries around the United States also use LCSH to provide subject access to their collections. In addition LCSH is used internationally, often in translation. LCSH in this service includes all Library of Congress Subject Headings, free-floating subdivisions (topical and form), Genre/Form headings, Children's (AC) headings, and validation strings* for which authority records have been created. The content includes a few name headings (personal and corporate), such as William Shakespeare, Jesus Christ, and Harvard University, and geographic headings that are added to LCSH as they are needed to establish subdivisions, provide a pattern for subdivision practice, or provide reference structure for other terms. This content is expanded beyond the print issue of LCSH (the \"red books\") with inclusion of validation strings. *Validation strings: Some authority records are for headings that have been built by adding subdivisions. These records are the result of an ongoing project to programmatically create authority records for valid subject strings from subject heading strings found in bibliographic records. The authority records for these subject strings were created so the entire string could be machine-validated. The strings do not have broader, narrower, or related terms."@de;
+  sdo:name "Subjects MARC21"@de .
 
 <http://example.org/13> a wd:Q1469824;
-  sdo:name "EuroVoc"@de;
-  sdo:description "Mehrsprachiger und multidisziplinärer Thesaurus der EU"@de;
-  sdo:about "Fach- und Themenzuordnung"@de;
-  wdt:P973 <https://eur-lex.europa.eu/browse/eurovoc.html>;
+  wdt:P7374 "Bildungsbereichsübergreifend"@de;
   wdt:P126 "Europäische Union"@de;
-  wdt:P7374 "Bildungsbereichsübergreifend"@de .
+  wdt:P973 <https://eur-lex.europa.eu/browse/eurovoc.html>;
+  sdo:about "Fach- und Themenzuordnung"@de;
+  sdo:description "Mehrsprachiger und multidisziplinärer Thesaurus der EU"@de;
+  sdo:name "EuroVoc"@de .
 
 <http://example.org/14> a wd:Q1469824;
-  sdo:name "UNESCO Thesaurus"@de;
-  sdo:description "zur thematischen Analyse und Auffinden von Dokumenten anhand multidisziplinärer Terminologie, bspw. auch: Wissenschaftsdisziplinen, u.a. verfügbar als JSON-LD, Turtle, RDF/XML."@de;
-  sdo:about "Fach- und Themenzuordnung"@de;
-  wdt:P973 <https://vocabularies.unesco.org/browser/thesaurus/en/>;
+  wdt:P7374 "Bildungsbereichsübergreifend"@de;
   wdt:P126 "UNESCO"@de;
-  wdt:P7374 "Bildungsbereichsübergreifend"@de .
+  wdt:P973 <https://vocabularies.unesco.org/browser/thesaurus/en/>;
+  sdo:about "Fach- und Themenzuordnung"@de;
+  sdo:description "zur thematischen Analyse und Auffinden von Dokumenten anhand multidisziplinärer Terminologie, bspw. auch: Wissenschaftsdisziplinen, u.a. verfügbar als JSON-LD, Turtle, RDF/XML."@de;
+  sdo:name "UNESCO Thesaurus"@de .
 
 <http://example.org/15> a wd:Q1469824;
-  sdo:name "Wissenschafts-/ Kunstzweige"@de;
-  sdo:description "Vokabular von Wissenschafts- und Kunstzweigen."@de;
-  sdo:about "Fach- und Themenzuordnung"@de;
-  dct:issued "-"^^xsd:date;
-  wdt:P973 <https://voc.uni-ak.ac.at/skosmos/disciplines/de/>;
-  wdt:P126 "Universität für angewandte Kunst Wien"@de;
-  wdt:P7374 "Bildungsbereichsübergreifend"@de;
   wdt:P5009 "SKOS"@de;
-  wdt:P2701 "Turtle"@de .
+  wdt:P7374 "Bildungsbereichsübergreifend"@de;
+  wdt:P126 "Universität für angewandte Kunst Wien"@de;
+  wdt:P973 <https://voc.uni-ak.ac.at/skosmos/disciplines/de/>;
+  dct:issued "-"^^xsd:date;
+  sdo:about "Fach- und Themenzuordnung"@de;
+  sdo:description "Vokabular von Wissenschafts- und Kunstzweigen."@de;
+  sdo:name "Wissenschafts-/ Kunstzweige"@de .
 
 <http://example.org/16> a wd:Q1469824;
-  sdo:name "Studienrichtungen"@de;
-  sdo:description "Verzeichnis von Studienrichtungen."@de;
-  sdo:about "Fach- und Themenzuordnung"@de;
-  dct:issued "-"^^xsd:date;
-  wdt:P973 <http://base.uni-ak.ac.at/vocabulary/study_programmes>;
-  wdt:P126 "Universität für angewandte Kunst Wien"@de;
-  wdt:P7374 "Hochschule"@de;
   wdt:P5009 "SKOS"@de;
-  wdt:P2701 "Turtle"@de .
+  wdt:P7374 "Hochschule"@de;
+  wdt:P126 "Universität für angewandte Kunst Wien"@de;
+  wdt:P973 <http://base.uni-ak.ac.at/vocabulary/study_programmes>;
+  dct:issued "-"^^xsd:date;
+  sdo:about "Fach- und Themenzuordnung"@de;
+  sdo:description "Verzeichnis von Studienrichtungen."@de;
+  sdo:name "Studienrichtungen"@de .
 
 <http://example.org/17> a wd:Q1469824;
-  sdo:name "Historische Studienrichtungen"@de;
-  sdo:description "Verzeichnis historischer Studienrichtungen."@de;
-  sdo:about "Fach- und Themenzuordnung"@de;
-  dct:issued "-"^^xsd:date;
-  wdt:P973 <https://voc.uni-ak.ac.at/skosmos/basevoc/en/page/historic_study_programmes>;
-  wdt:P126 "Universität für angewandte Kunst Wien"@de;
-  wdt:P1324 "https://voc.uni-ak.ac.at/skosmos/rest/v1/basevoc/data?uri=http%3A%2F%2Fbase.uni-ak.ac.at%2Fvocabulary%2Fstudy_programmes&format=text/turtle"@de;
-  wdt:P7374 "Hochschule"@de;
   wdt:P5009 "SKOS"@de;
-  wdt:P2701 "Turtle"@de .
+  wdt:P7374 "Hochschule"@de;
+  wdt:P1324 "https://voc.uni-ak.ac.at/skosmos/rest/v1/basevoc/data?uri=http%3A%2F%2Fbase.uni-ak.ac.at%2Fvocabulary%2Fstudy_programmes&format=text/turtle"@de;
+  wdt:P126 "Universität für angewandte Kunst Wien"@de;
+  wdt:P973 <https://voc.uni-ak.ac.at/skosmos/basevoc/en/page/historic_study_programmes>;
+  dct:issued "-"^^xsd:date;
+  sdo:about "Fach- und Themenzuordnung"@de;
+  sdo:description "Verzeichnis historischer Studienrichtungen."@de;
+  sdo:name "Historische Studienrichtungen"@de .
 
 <http://example.org/18> a wd:Q1469824;
-  sdo:name "European Skills Competencies, and Occupations (ESCO)"@de;
-  sdo:about "Fach- und Themenzuordnung"@de;
-  wdt:P973 <https://esco.ec.europa.eu/de>;
+  wdt:P7374 "Bildungsbereichsübergreifend"@de;
   wdt:P126 "Europäische Union"@de;
-  wdt:P7374 "Bildungsbereichsübergreifend"@de .
+  wdt:P973 <https://esco.ec.europa.eu/de>;
+  sdo:about "Fach- und Themenzuordnung"@de;
+  sdo:name "European Skills Competencies, and Occupations (ESCO)"@de .
 
 <http://example.org/19> a wd:Q1469824;
-  sdo:name "Sprachniveaustufen"@de;
-  sdo:description ", veröffentlicht durch WLO, basierend auf dem Gemeinsamen Europäischen Referenzrahmen für Sprachen (DAAD 2024) (Glaboniat and Europarat 2010) (Trim et al. 2010) / Common European Framework of Reference for Languages (CEFR), herausgegeben vom Europarat"@de;
-  sdo:about "Sprachen"@de;
-  wdt:P973 <http://w3id.org/openeduhub/vocabs/languageLevel/>;
+  wdt:P7374 "Bildungsbereichsübergreifend"@de;
   wdt:P126 "WirLernenOnline"@de;
-  wdt:P7374 "Bildungsbereichsübergreifend"@de .
+  wdt:P973 <http://w3id.org/openeduhub/vocabs/languageLevel/>;
+  sdo:about "Sprachen"@de;
+  sdo:description ", veröffentlicht durch WLO, basierend auf dem Gemeinsamen Europäischen Referenzrahmen für Sprachen (DAAD 2024) (Glaboniat and Europarat 2010) (Trim et al. 2010) / Common European Framework of Reference for Languages (CEFR), herausgegeben vom Europarat"@de;
+  sdo:name "Sprachniveaustufen"@de .
 
 <http://example.org/20> a wd:Q1469824;
-  sdo:name "Digital Competence Framework for Educators (DigCompEdu)"@de;
+  wdt:P7374 "Schule"@de;
+  wdt:P126 "WirLernenOnline"@de;
+  wdt:P973 <http://w3id.org/openeduhub/vocabs/digCompEdu/>;
+  sdo:about "Kompetenzen"@de;
   sdo:description """Der Europäische Rahmen für die digitale Kompetenz Lehrender richtet sich an Lehrende
 auf allen Bildungsebenen, von der frühen Kindheit bis zur Hochschul- und
 Erwachsenenbildung, einschließlich allgemeiner und beruflicher Bildung und Ausbildung,
@@ -194,138 +224,138 @@ Bezugsrahmen für Entwickler digitaler Kompetenzmodelle bereitzustellen, d.h. F�
 Mitgliedstaaten, Regionalregierungen, relevante nationale und regionale Agenturen,
 Bildungsorganisationen selbst sowie öffentliche oder private Anbieter von
 Berufsausbildungen"""@de;
-  sdo:about "Kompetenzen"@de;
-  wdt:P973 <http://w3id.org/openeduhub/vocabs/digCompEdu/>;
-  wdt:P126 "WirLernenOnline"@de;
-  wdt:P7374 "Schule"@de .
+  sdo:name "Digital Competence Framework for Educators (DigCompEdu)"@de .
 
 <http://example.org/21> a wd:Q1469824;
-  sdo:name "Orientierungsrahmen für die Lehrerausbildung und Lehrerfortbildung in NRW,"@de;
-  sdo:description "Mit dem Orientierungsrahmen hat das Land Nordrhein-Westfalen eine verbindliche Grundlage für die Lehreraus- und Lehrerfortbildung in der digitalisierten Welt geschaffen. Anknüpfend an die bekannten Handlungsfelder für Lehrerinnen und Lehrer – Unterrichten, Erziehen, Lernen und Leisten fördern, Beraten und Schule entwickeln – zeigt der Orientierungsrahmen auf, welche neuen – unter den Bedingungen der Digitalisierung künftig aber zentralen – Kompetenzen, es auszubilden gilt. Der Orientierungsrahmen macht transparent, welche pädagogischen und didaktischen Kompetenzen das Land bei Lehrkräften für grundlegend hält, den Herausforderungen und Chancen der Digitalisierung gestaltend zu begegnen. Für die Lehreraus- und Lehrerfortbildung sind damit zukunftsweisende Weichen gestellt worden."@de;
-  sdo:about "digitalisierungsbezogene Kompetenzen"@de;
+  wdt:P126 "WirLernenOnline"@de;
   wdt:P973 <http://w3id.org/openeduhub/vocabs/orientierungsrahmenNRW/>;
-  wdt:P126 "WirLernenOnline"@de .
+  sdo:about "digitalisierungsbezogene Kompetenzen"@de;
+  sdo:description "Mit dem Orientierungsrahmen hat das Land Nordrhein-Westfalen eine verbindliche Grundlage für die Lehreraus- und Lehrerfortbildung in der digitalisierten Welt geschaffen. Anknüpfend an die bekannten Handlungsfelder für Lehrerinnen und Lehrer – Unterrichten, Erziehen, Lernen und Leisten fördern, Beraten und Schule entwickeln – zeigt der Orientierungsrahmen auf, welche neuen – unter den Bedingungen der Digitalisierung künftig aber zentralen – Kompetenzen, es auszubilden gilt. Der Orientierungsrahmen macht transparent, welche pädagogischen und didaktischen Kompetenzen das Land bei Lehrkräften für grundlegend hält, den Herausforderungen und Chancen der Digitalisierung gestaltend zu begegnen. Für die Lehreraus- und Lehrerfortbildung sind damit zukunftsweisende Weichen gestellt worden."@de;
+  sdo:name "Orientierungsrahmen für die Lehrerausbildung und Lehrerfortbildung in NRW,"@de .
 
 <http://example.org/22> a wd:Q1469824;
-  sdo:name "4D Competencies Framework"@de;
-  sdo:description "Der vierdimensionale (4D) Bildungsrahmen der CCR wurde so benannt, um zu verdeutlichen, dass die Schüler von heute sich in vier Dimensionen entwickeln müssen - Wissen, Fähigkeiten, Charakter und Meta-Lernen - um sich selbst und der Gesellschaft so gut wie möglich zu dienen. Das Kernprinzip einer 4D-Bildung besteht darin, die Wissensvermittlung mit den anderen drei Dimensionen zu verknüpfen. Aber wie wird das gemacht? Indem diese drei Dimensionen in einen Rahmen von Kompetenzen und Teilkompetenzen unterteilt werden, können Lehrkräfte ihren Unterricht effektiver, zielgerichteter, logischer und relevanter gestalten."@de;
-  sdo:about "digitalisierungsbezogene Kompetenzen"@de;
-  dct:issued "Januar 2024"^^xsd:date;
-  wdt:P973 <https://curriculumredesign.org/framework/>;
-  wdt:P126 "Centre for Curriculum Redesign"@de;
+  wdt:P7374 "Bildungsbereichsübergreifend"@de;
   wdt:P1324 "welches Kompetenzen im Zeitalter der KI definiert, v1.2"@de;
-  wdt:P7374 "Bildungsbereichsübergreifend"@de .
+  wdt:P126 "Centre for Curriculum Redesign"@de;
+  wdt:P973 <https://curriculumredesign.org/framework/>;
+  dct:issued "Januar 2024"^^xsd:date;
+  sdo:about "digitalisierungsbezogene Kompetenzen"@de;
+  sdo:description "Der vierdimensionale (4D) Bildungsrahmen der CCR wurde so benannt, um zu verdeutlichen, dass die Schüler von heute sich in vier Dimensionen entwickeln müssen - Wissen, Fähigkeiten, Charakter und Meta-Lernen - um sich selbst und der Gesellschaft so gut wie möglich zu dienen. Das Kernprinzip einer 4D-Bildung besteht darin, die Wissensvermittlung mit den anderen drei Dimensionen zu verknüpfen. Aber wie wird das gemacht? Indem diese drei Dimensionen in einen Rahmen von Kompetenzen und Teilkompetenzen unterteilt werden, können Lehrkräfte ihren Unterricht effektiver, zielgerichteter, logischer und relevanter gestalten."@de;
+  sdo:name "4D Competencies Framework"@de .
 
 <http://example.org/23> a wd:Q1469824;
-  sdo:name """UDE-Modell: Ein integratives Modell digitalisierungsbezogener
-    Kompetenzen für die
-    Lehramtsausbildung"""@de;
+  wdt:P126 "ComeIn"@de;
+  wdt:P973 <https://w3id.org/comein/vocabs/ude-modell/>;
+  sdo:about "digitalisierungsbezogene Kompetenzen"@de;
   sdo:description """Das UDE-Modell beschreibt sowohl grundlegende Voraussetzungen als auch institutionelle und unterrichtsbezogene Aspekte der digitalisierungsbezogenen Kompetenzen von Lehrkräften.
 Den inneren Kern des Modells bildet die Förderung der fachspezifischen und digitalisierungsbezogenen Kompetenzen von Schüler*innen. Alle umliegenden Bereiche sind darauf ausgerichtet."""@de;
-  sdo:about "digitalisierungsbezogene Kompetenzen"@de;
-  wdt:P973 <https://w3id.org/comein/vocabs/ude-modell/>;
-  wdt:P126 "ComeIn"@de .
+  sdo:name """UDE-Modell: Ein integratives Modell digitalisierungsbezogener
+    Kompetenzen für die
+    Lehramtsausbildung"""@de .
 
 <http://example.org/24> a wd:Q1469824;
-  sdo:name """Kompetenzen in der digitalen Welt
-  (KMK)"""@de;
+  wdt:P126 "WirLernenOnline"@de;
+  wdt:P973 <http://w3id.org/openeduhub/vocabs/digitalCompetencies/>;
+  sdo:about "digitalisierungsbezogene Kompetenzen"@de;
   sdo:description """Die Digitalisierung und Mediatisierung haben in allen Bereichen unserer Lebens- und Arbeits-
 welt zu entscheidenden Veränderungen geführt. Diese gehen über einen rein technischen
 Fortschritt hinaus und führen zu einem breit angelegten kulturellen und gesellschaftlichen
 Wandel, der sich auf das schulische Lehren und Lernen und auf die Bewältigung und Gestal-
 tung von Lebens- bzw. Arbeitsprozessen von Kindern, Jugendlichen und jungen Erwachsenen
 auswirkt."""@de;
-  sdo:about "digitalisierungsbezogene Kompetenzen"@de;
-  wdt:P973 <http://w3id.org/openeduhub/vocabs/digitalCompetencies/>;
-  wdt:P126 "WirLernenOnline"@de .
+  sdo:name """Kompetenzen in der digitalen Welt
+  (KMK)"""@de .
 
 <http://example.org/25> a wd:Q1469824;
-  sdo:name "Kompetenzen in der digitalen Welt (KMK),"@de;
+  wdt:P126 "DINI-AG-KIM"@de;
+  wdt:P973 <http://w3id.org/kim/kmk-vocabs/digitalisierungsbezogene-kompetenzen/>;
+  sdo:about "digitalisierungsbezogene Kompetenzen"@de;
   sdo:description """Die Digitalisierung und Mediatisierung haben in allen Bereichen unserer Lebens- und Arbeits-
 welt zu entscheidenden Veränderungen geführt. Diese gehen über einen rein technischen
 Fortschritt hinaus und führen zu einem breit angelegten kulturellen und gesellschaftlichen
 Wandel, der sich auf das schulische Lehren und Lernen und auf die Bewältigung und Gestal-
 tung von Lebens- bzw. Arbeitsprozessen von Kindern, Jugendlichen und jungen Erwachsenen
 auswirkt."""@de;
-  sdo:about "digitalisierungsbezogene Kompetenzen"@de;
-  wdt:P973 <http://w3id.org/kim/kmk-vocabs/digitalisierungsbezogene-kompetenzen/>;
-  wdt:P126 "DINI-AG-KIM"@de .
+  sdo:name "Kompetenzen in der digitalen Welt (KMK),"@de .
 
 <http://example.org/26> a wd:Q1469824;
-  sdo:name "Kompetenzen in der digitalen Welt (KMK),"@de;
+  wdt:P126 "SODIX"@de;
+  wdt:P973 <https://vocabs.sodix.de/index.de.html>;
+  sdo:about "digitalisierungsbezogene Kompetenzen"@de;
   sdo:description """Die Digitalisierung und Mediatisierung haben in allen Bereichen unserer Lebens- und Arbeits-
 welt zu entscheidenden Veränderungen geführt. Diese gehen über einen rein technischen
 Fortschritt hinaus und führen zu einem breit angelegten kulturellen und gesellschaftlichen
 Wandel, der sich auf das schulische Lehren und Lernen und auf die Bewältigung und Gestal-
 tung von Lebens- bzw. Arbeitsprozessen von Kindern, Jugendlichen und jungen Erwachsenen
 auswirkt."""@de;
-  sdo:about "digitalisierungsbezogene Kompetenzen"@de;
-  wdt:P973 <https://vocabs.sodix.de/index.de.html>;
-  wdt:P126 "SODIX"@de .
+  sdo:name "Kompetenzen in der digitalen Welt (KMK),"@de .
 
 <http://example.org/27> a wd:Q1469824;
-  sdo:name "Medienkompetenzrahmen NRW,"@de;
-  sdo:description "Standard für die Schul- und Unterrichtsentwicklung zur Förderung von Medienkompetenz in der Primarstufe und der Sekundarstufe I sowie zur Förderung digitaler Schlüsselkompetenzen am Berufskolleg"@de;
-  sdo:about "digitalisierungsbezogene Kompetenzen"@de;
+  wdt:P126 "Open Edu Hub/WirLernenOnline/ComeIn"@de;
   wdt:P973 <http://w3id.org/openeduhub/vocabs/medienkompetenzrahmenNRW/>;
-  wdt:P126 "Open Edu Hub/WirLernenOnline/ComeIn"@de .
+  sdo:about "digitalisierungsbezogene Kompetenzen"@de;
+  sdo:description "Standard für die Schul- und Unterrichtsentwicklung zur Förderung von Medienkompetenz in der Primarstufe und der Sekundarstufe I sowie zur Förderung digitaler Schlüsselkompetenzen am Berufskolleg"@de;
+  sdo:name "Medienkompetenzrahmen NRW,"@de .
 
 <http://example.org/28> a wd:Q1469824;
-  sdo:name "DaZKom: Ein Modell professioneller Kompetenzen angehender Lehrkräfte im Bereich Deutsch als Zweitsprache,"@de;
-  sdo:description "Das DaZKom-Projekt ist ein Kooperationsprojekt der Leuphana Universität Lüneburg und der Universität Bielefeld. Gefördert wird das Projekt vom BMBF im Rahmen des Transferprojektes „Kompetenzmodelle und Instrumente der Kompetenzerfassung im Hochschulsektor – Validierungen und methodische Innovationen“ (KoKoHs)\" (https://www.dazkom.de/links/). Das Projekt hat das Ziel der theoretischen Modellierung und empirischen Überprüfung von Kompetenzen im Bereich Deutsch als Zweitsprache (DaZ), die Lehrer*innen zusätzlich zu ihrer disziplinären Expertise besitzen müssen, um v.a. SchülerInnen mit nichtdeutscher Herkunftssprache im regulären Unterricht angemessen fördern zu können."@de;
-  sdo:about "digitalisierungsbezogene Kompetenzen"@de;
+  wdt:P126 "ComeIn"@de;
   wdt:P973 <http://w3id.org/comein/vocabs/dazkom/>;
-  wdt:P126 "ComeIn"@de .
+  sdo:about "digitalisierungsbezogene Kompetenzen"@de;
+  sdo:description "Das DaZKom-Projekt ist ein Kooperationsprojekt der Leuphana Universität Lüneburg und der Universität Bielefeld. Gefördert wird das Projekt vom BMBF im Rahmen des Transferprojektes „Kompetenzmodelle und Instrumente der Kompetenzerfassung im Hochschulsektor – Validierungen und methodische Innovationen“ (KoKoHs)\" (https://www.dazkom.de/links/). Das Projekt hat das Ziel der theoretischen Modellierung und empirischen Überprüfung von Kompetenzen im Bereich Deutsch als Zweitsprache (DaZ), die Lehrer*innen zusätzlich zu ihrer disziplinären Expertise besitzen müssen, um v.a. SchülerInnen mit nichtdeutscher Herkunftssprache im regulären Unterricht angemessen fördern zu können."@de;
+  sdo:name "DaZKom: Ein Modell professioneller Kompetenzen angehender Lehrkräfte im Bereich Deutsch als Zweitsprache,"@de .
 
 <http://example.org/29> a wd:Q1469824;
-  sdo:name "Bildungsstandards (IQB)"@de;
-  sdo:description "Bildungsstandards sind fachdidaktisch begründete und auf mittlerem Abstraktionsgrad formulierte Leistungserwartungen an die Schüler*innen. Sie nehmen damit eine Mittelstellung zwischen sehr allgemeinen Bildungszielen einerseits und konkreten Aufgabenstellungen andererseits ein und setzen diese miteinander in Beziehung. Sie sind dadurch sowohl zukunfts- und verwendungsoffen als auch gesellschaftlich konsensfähig. Mithilfe der Testergebnisse kann nachgewiesen werden, wie gut Schüler*innen in der Lage sind, fachbezogene Aufgaben und Probleme zu lösen."@de;
-  sdo:about "Bildungsstandards sowie Lehrplan-/Curricula-orientierte Wertelisten"@de;
-  wdt:P973 <https://github.com/iqb-vocabs/iqb-vocabs.github.io>;
+  wdt:P7374 "Schule"@de;
   wdt:P126 "Institut für Qualitätsentwicklung im Bildungswesen"@de;
-  wdt:P7374 "Schule"@de .
+  wdt:P973 <https://github.com/iqb-vocabs/iqb-vocabs.github.io>;
+  sdo:about "Bildungsstandards sowie Lehrplan-/Curricula-orientierte Wertelisten"@de;
+  sdo:description "Bildungsstandards sind fachdidaktisch begründete und auf mittlerem Abstraktionsgrad formulierte Leistungserwartungen an die Schüler*innen. Sie nehmen damit eine Mittelstellung zwischen sehr allgemeinen Bildungszielen einerseits und konkreten Aufgabenstellungen andererseits ein und setzen diese miteinander in Beziehung. Sie sind dadurch sowohl zukunfts- und verwendungsoffen als auch gesellschaftlich konsensfähig. Mithilfe der Testergebnisse kann nachgewiesen werden, wie gut Schüler*innen in der Lage sind, fachbezogene Aufgaben und Probleme zu lösen."@de;
+  sdo:name "Bildungsstandards (IQB)"@de .
 
 <http://example.org/30> a wd:Q1469824;
-  sdo:name "Schulcampus RLP"@de;
-  sdo:description "Lehrpläne des Landes Rheinland-Pfalz."@de;
-  sdo:about "Bildungsstandards sowie Lehrplan-/Curricula-orientierte Wertelisten"@de;
-  wdt:P973 <https://cloud.schulcampus-rlp.de/edu-sharing/components/search>;
+  wdt:P7374 "Schule"@de;
   wdt:P126 "Schulcampus Rheinland-Pfalz"@de;
-  wdt:P7374 "Schule"@de .
+  wdt:P973 <https://cloud.schulcampus-rlp.de/edu-sharing/components/search>;
+  sdo:about "Bildungsstandards sowie Lehrplan-/Curricula-orientierte Wertelisten"@de;
+  sdo:description "Lehrpläne des Landes Rheinland-Pfalz."@de;
+  sdo:name "Schulcampus RLP"@de .
 
 <http://example.org/31> a wd:Q1469824;
-  sdo:name "Kompetenzbrowser des Instituts für Schulqualität der Länder Berlin und Brandenburg e. V. (ISQ)"@de;
-  sdo:description "Der Kompetenzbrowser ist ein einfacher Weg, die Bildungsstandards für die Fächer Deutsch, Mathematik und Englisch/Französisch für die Primar- und Sekundarstufe I zu erkunden. Insbesondere für Lehrkräfte bietet die Entfaltung der Bildungsstandards einen originellen Zugang zu den Kompetenzkonzeptionen der Rahmenlehrpläne und Vergleichsarbeiten (VERA). Die Kompetenzen werden mit Aufgaben illustriert und mit didaktischen Hinweisen zur Kompetenzentwicklung im Unterricht unterlegt."@de;
-  sdo:about "Bildungsstandards sowie Lehrplan-/Curricula-orientierte Wertelisten"@de;
-  wdt:P973 <https://kompetenzbrowser.de/>;
+  wdt:P7374 "Schule"@de;
   wdt:P126 "Institut für Schulqualität der Länder Berlin und Brandenburg e.V."@de;
-  wdt:P7374 "Schule"@de .
+  wdt:P973 <https://kompetenzbrowser.de/>;
+  sdo:about "Bildungsstandards sowie Lehrplan-/Curricula-orientierte Wertelisten"@de;
+  sdo:description "Der Kompetenzbrowser ist ein einfacher Weg, die Bildungsstandards für die Fächer Deutsch, Mathematik und Englisch/Französisch für die Primar- und Sekundarstufe I zu erkunden. Insbesondere für Lehrkräfte bietet die Entfaltung der Bildungsstandards einen originellen Zugang zu den Kompetenzkonzeptionen der Rahmenlehrpläne und Vergleichsarbeiten (VERA). Die Kompetenzen werden mit Aufgaben illustriert und mit didaktischen Hinweisen zur Kompetenzentwicklung im Unterricht unterlegt."@de;
+  sdo:name "Kompetenzbrowser des Instituts für Schulqualität der Länder Berlin und Brandenburg e. V. (ISQ)"@de .
 
 <http://example.org/32> a wd:Q1469824;
-  sdo:name "Medienkompetenz-Navigator"@de;
-  sdo:about "Bildungsstandards sowie Lehrplan-/Curricula-orientierte Wertelisten"@de;
-  wdt:P973 <https://mk-navi.mebis.bycs.de/mctool/schooltypes>;
+  wdt:P7374 "Schule"@de;
   wdt:P126 "Mebis"@de;
-  wdt:P7374 "Schule"@de .
+  wdt:P973 <https://mk-navi.mebis.bycs.de/mctool/schooltypes>;
+  sdo:about "Bildungsstandards sowie Lehrplan-/Curricula-orientierte Wertelisten"@de;
+  sdo:name "Medienkompetenz-Navigator"@de .
 
 <http://example.org/> a wd:Q1469824;
-  sdo:name "Lehrplan Plus Bayern"@de;
-  sdo:description "Lehrpläne des Landes Bayern."@de;
-  sdo:about "Bildungsstandards sowie Lehrplan-/Curricula-orientierte Wertelisten"@de;
-  wdt:P973 <https://www.lehrplanplus.bayern.de/>;
+  wdt:P7374 "Schule"@de;
   wdt:P126 "Mebis"@de;
-  wdt:P7374 "Schule"@de .
+  wdt:P973 <https://www.lehrplanplus.bayern.de/>;
+  sdo:about "Bildungsstandards sowie Lehrplan-/Curricula-orientierte Wertelisten"@de;
+  sdo:description "Lehrpläne des Landes Bayern."@de;
+  sdo:name "Lehrplan Plus Bayern"@de .
 
 <http://example.org/33> a wd:Q1469824;
-  sdo:name "Hochschulkompass"@de;
-  sdo:description "Verzeichnis von Studiengängen."@de;
-  sdo:about "Hochschule: Standards und Modulkataloge"@de;
-  wdt:P973 <https://www.hochschulkompass.de/>;
+  wdt:P7374 "Hochschule"@de;
   wdt:P126 "Hochschulrektorenkonferenz"@de;
-  wdt:P7374 "Hochschule"@de .
+  wdt:P973 <https://www.hochschulkompass.de/>;
+  sdo:about "Hochschule: Standards und Modulkataloge"@de;
+  sdo:description "Verzeichnis von Studiengängen."@de;
+  sdo:name "Hochschulkompass"@de .
 
 <http://example.org/34> a wd:Q1469824;
-  sdo:name "KMK: Standards für die Lehrerbildung: Bildungswissenschaften (vom 16.12.2004 i.d.F. vom 16.05.2019)"@de;
+  wdt:P7374 "Lehrerbildung"@de;
+  wdt:P126 "DINI-AG-KIM"@de;
+  wdt:P973 <http://w3id.org/kim/kmk-vocabs/bildungswissenschaften/>;
+  sdo:about "Hochschule: Standards und Modulkataloge"@de;
   sdo:description """Standards in der Lehrerbildung beschreiben Anforderungen an das Handeln von Lehrkräften.
 Sie beziehen sich auf Kompetenzen und somit auf Fähigkeiten, Fertigkeiten und Einstellungen,
 über die eine Lehrkraft zur Bewältigung der beruflichen Anforderungen verfügen soll. Dabei
@@ -333,810 +363,807 @@ schließt berufliches Handeln auch die Kompetenz zu kollegialer Zusammenarbeit u
 operation mit anderen Professionen und Einrichtungen ein.
 Aus den angestrebten Kompetenzen ergeben sich Anforderungen für die gesamte Ausbildung
 und die Berufspraxis."""@de;
-  sdo:about "Hochschule: Standards und Modulkataloge"@de;
-  wdt:P973 <http://w3id.org/kim/kmk-vocabs/bildungswissenschaften/>;
-  wdt:P126 "DINI-AG-KIM"@de;
-  wdt:P7374 "Lehrerbildung"@de .
+  sdo:name "KMK: Standards für die Lehrerbildung: Bildungswissenschaften (vom 16.12.2004 i.d.F. vom 16.05.2019)"@de .
 
 <http://example.org/35> a wd:Q1469824;
-  sdo:name "Sammlung von Plänen verschiedener Länder im Primarbereich"@de;
-  sdo:description "Orientierungspläne für Bildung und Erziehung im Kindergarten."@de;
-  sdo:about "Bildungsstandards sowie Lehrplan-/Curricula-orientierte Wertelisten"@de;
-  wdt:P973 <https://www.kindergartenpaedagogik.de/fachartikel/bildung-erziehung-betreuung/1951/>;
+  wdt:P7374 "Primarbereich"@de;
   wdt:P126 "Martin R. Textor"@de;
-  wdt:P7374 "Primarbereich"@de .
+  wdt:P973 <https://www.kindergartenpaedagogik.de/fachartikel/bildung-erziehung-betreuung/1951/>;
+  sdo:about "Bildungsstandards sowie Lehrplan-/Curricula-orientierte Wertelisten"@de;
+  sdo:description "Orientierungspläne für Bildung und Erziehung im Kindergarten."@de;
+  sdo:name "Sammlung von Plänen verschiedener Länder im Primarbereich"@de .
 
 <http://example.org/36> a wd:Q1469824;
-  sdo:name "NextGeneration Science Standards "@de;
-  sdo:description "Im Rahmen der Next Generation Science Standards (NGSS) gibt es drei verschiedene und gleichermaßen wichtige Dimensionen des wissenschaftlichen Lernens. Diese Dimensionen werden kombiniert, um jeden Standard - oder jede Leistungserwartung - zu bilden, und jede Dimension arbeitet mit den beiden anderen zusammen, um den Schülern zu helfen, im Laufe der Zeit ein zusammenhängendes Verständnis der Wissenschaft zu entwickeln."@de;
-  sdo:about "Bildungsstandards sowie Lehrplan-/Curricula-orientierte Wertelisten"@de;
+  wdt:P126 "Next Generation Science Standards"@de;
   wdt:P973 <https://www.nextgenscience.org/>;
-  wdt:P126 "Next Generation Science Standards"@de .
+  sdo:about "Bildungsstandards sowie Lehrplan-/Curricula-orientierte Wertelisten"@de;
+  sdo:description "Im Rahmen der Next Generation Science Standards (NGSS) gibt es drei verschiedene und gleichermaßen wichtige Dimensionen des wissenschaftlichen Lernens. Diese Dimensionen werden kombiniert, um jeden Standard - oder jede Leistungserwartung - zu bilden, und jede Dimension arbeitet mit den beiden anderen zusammen, um den Schülern zu helfen, im Laufe der Zeit ein zusammenhängendes Verständnis der Wissenschaft zu entwickeln."@de;
+  sdo:name "NextGeneration Science Standards "@de .
 
 <http://example.org/37> a wd:Q1469824;
-  sdo:name "Assessment Type, Assessment Type Administered"@de;
-  sdo:description "Die Kategorie einer Bewertung auf der Grundlage von Format und Inhalt."@de;
-  sdo:about "Lernkontrollen"@de;
+  wdt:P126 "Common Education Data Standards"@de;
   wdt:P973 <https://ceds.ed.gov/element/000029>;
-  wdt:P126 "Common Education Data Standards"@de .
+  sdo:about "Lernkontrollen"@de;
+  sdo:description "Die Kategorie einer Bewertung auf der Grundlage von Format und Inhalt."@de;
+  sdo:name "Assessment Type, Assessment Type Administered"@de .
 
 <http://example.org/38> a wd:Q1469824;
-  sdo:name "Assessment Purpose"@de;
-  sdo:description "Der Grund, aus dem eine Bewertung konzipiert oder durchgeführt wird."@de;
-  sdo:about "Lernkontrollen"@de;
+  wdt:P126 "Common Education Data Standards"@de;
   wdt:P973 <https://ceds.ed.gov/element/000026>;
-  wdt:P126 "Common Education Data Standards"@de .
+  sdo:about "Lernkontrollen"@de;
+  sdo:description "Der Grund, aus dem eine Bewertung konzipiert oder durchgeführt wird."@de;
+  sdo:name "Assessment Purpose"@de .
 
 <http://example.org/39> a wd:Q1469824;
-  sdo:name "DQR / EQR (?)"@de;
-  wdt:P126 "DINI-AG-KIM"@de .
+  wdt:P126 "DINI-AG-KIM"@de;
+  sdo:name "DQR / EQR (?)"@de .
 
 <http://example.org/40> a wd:Q1469824;
-  sdo:name "Bildungsstufen"@de;
-  sdo:description "Eine Wertelliste für die Stufe im Bildungssystem als Lehr-/Lernkontext, für den Lernobjekt ausgewiesen ist."@de;
-  sdo:about "Bildungsstufen"@de;
-  wdt:P973 <https://w3id.org/kim/educationalLevel/>;
+  wdt:P1324 "https://github.com/dini-ag-kim/educationalLevel"@de;
   wdt:P126 "DINI-AG-KIM"@de;
-  wdt:P1324 "https://github.com/dini-ag-kim/educationalLevel"@de .
+  wdt:P973 <https://w3id.org/kim/educationalLevel/>;
+  sdo:about "Bildungsstufen"@de;
+  sdo:description "Eine Wertelliste für die Stufe im Bildungssystem als Lehr-/Lernkontext, für den Lernobjekt ausgewiesen ist."@de;
+  sdo:name "Bildungsstufen"@de .
 
 <http://example.org/41> a wd:Q1469824;
-  sdo:name "Bildungsstufe"@de;
-  sdo:description "Eine Wertelliste für die Bildungsstufe, in der das Lernobjekt genutzt werden kann. Entstanden im Kontext des OpenEduHub."@de;
-  sdo:about "Bildungsstufen"@de;
+  wdt:P126 "WirLernenOnline"@de;
   wdt:P973 <http://w3id.org/openeduhub/vocabs/educationalContext/>;
-  wdt:P126 "WirLernenOnline"@de .
+  sdo:about "Bildungsstufen"@de;
+  sdo:description "Eine Wertelliste für die Bildungsstufe, in der das Lernobjekt genutzt werden kann. Entstanden im Kontext des OpenEduHub."@de;
+  sdo:name "Bildungsstufe"@de .
 
 <http://example.org/42> a wd:Q1469824;
-  sdo:name "International Standard Classification of Education 1997"@de;
-  sdo:description "Dies ist eine SKOS-Darstellung der ISCED-Bildungsniveaus von 1997."@de;
-  sdo:about "Bildungsstufen"@de;
-  wdt:P973 <https://w3id.org/kim/isced-1997/scheme>;
+  wdt:P1324 "https://github.com/dini-ag-kim/vocabs-edu"@de;
   wdt:P126 "DINI-AG-KIM"@de;
-  wdt:P1324 "https://github.com/dini-ag-kim/vocabs-edu"@de .
+  wdt:P973 <https://w3id.org/kim/isced-1997/scheme>;
+  sdo:about "Bildungsstufen"@de;
+  sdo:description "Dies ist eine SKOS-Darstellung der ISCED-Bildungsniveaus von 1997."@de;
+  sdo:name "International Standard Classification of Education 1997"@de .
 
 <http://example.org/43> a wd:Q1469824;
-  sdo:name "International Standard Classification of Education 2011"@de;
-  sdo:description "Dies ist eine SKOS-Darstellung der ISCED-Bildungsniveaus von 2011."@de;
-  sdo:about "Bildungsstufen"@de;
-  wdt:P973 <https://w3id.org/kim/isced-2011/scheme>;
+  wdt:P1324 "https://github.com/dini-ag-kim/vocabs-edu"@de;
   wdt:P126 "DINI-AG-KIM"@de;
-  wdt:P1324 "https://github.com/dini-ag-kim/vocabs-edu"@de .
+  wdt:P973 <https://w3id.org/kim/isced-2011/scheme>;
+  sdo:about "Bildungsstufen"@de;
+  sdo:description "Dies ist eine SKOS-Darstellung der ISCED-Bildungsniveaus von 2011."@de;
+  sdo:name "International Standard Classification of Education 2011"@de .
 
 <http://example.org/44> a wd:Q1469824;
-  sdo:name "International Standard Classification of Education 2013"@de;
-  sdo:description "Dies ist eine SKOS-Darstellung der ISCED-Bildungsniveaus von 2013."@de;
-  sdo:about "Bildungsstufen"@de;
-  wdt:P973 <https://w3id.org/kim/isced-2013/scheme>;
+  wdt:P1324 "https://github.com/dini-ag-kim/vocabs-edu"@de;
   wdt:P126 "DINI-AG-KIM"@de;
-  wdt:P1324 "https://github.com/dini-ag-kim/vocabs-edu"@de .
+  wdt:P973 <https://w3id.org/kim/isced-2013/scheme>;
+  sdo:about "Bildungsstufen"@de;
+  sdo:description "Dies ist eine SKOS-Darstellung der ISCED-Bildungsniveaus von 2013."@de;
+  sdo:name "International Standard Classification of Education 2013"@de .
 
 <http://example.org/45> a wd:Q1469824;
-  sdo:name "LOM-CH: 5.6 Bildungsstufe"@de;
-  sdo:about "Bildungsstufen"@de .
+  sdo:about "Bildungsstufen"@de;
+  sdo:name "LOM-CH: 5.6 Bildungsstufe"@de .
 
 <http://example.org/46> a wd:Q1469824;
-  sdo:name "Common Education Data Standard: Learning Resource Education Level"@de;
-  sdo:description "Die Bildungsstufe, die Klassenstufe oder die primäre Unterrichtsstufe, für die eine Lernressource bestimmt ist."@de;
-  sdo:about "Bildungsstufen"@de;
+  wdt:P126 "Common Education Data Standards"@de;
   wdt:P973 <https://ceds.ed.gov/element/001246>;
-  wdt:P126 "Common Education Data Standards"@de .
+  sdo:about "Bildungsstufen"@de;
+  sdo:description "Die Bildungsstufe, die Klassenstufe oder die primäre Unterrichtsstufe, für die eine Lernressource bestimmt ist."@de;
+  sdo:name "Common Education Data Standard: Learning Resource Education Level"@de .
 
 <http://example.org/47> a wd:Q1469824;
-  sdo:name "EUN Educational Context Values:"@de;
-  sdo:description "Bildungsstufen des European School Net."@de;
-  sdo:about "Bildungsstufen"@de;
+  wdt:P126 "European Schoolnet Vocabulary Bank for Education"@de;
   wdt:P973 <http://europeanschoolnet-vbe.lexaurus.net/vbe/browse>;
-  wdt:P126 "European Schoolnet Vocabulary Bank for Education"@de .
+  sdo:about "Bildungsstufen"@de;
+  sdo:description "Bildungsstufen des European School Net."@de;
+  sdo:name "EUN Educational Context Values:"@de .
 
 <http://example.org/48> a wd:Q1469824;
-  sdo:name "LRE Educational Learning Context"@de;
-  sdo:description "Dieses Vokabular enthält Begriffe, die das institutionelle Umfeld oder das für die Verwendung des LO geeignete Bildungsniveau angeben."@de;
-  sdo:about "Bildungsstufen"@de;
+  wdt:P126 "European Schoolnet Vocabulary Bank for Education, Learning Resource Exchange Kommittee"@de;
   wdt:P973 <http://europeanschoolnet-vbe.lexaurus.net/vbe/browse>;
-  wdt:P126 "European Schoolnet Vocabulary Bank for Education, Learning Resource Exchange Kommittee"@de .
+  sdo:about "Bildungsstufen"@de;
+  sdo:description "Dieses Vokabular enthält Begriffe, die das institutionelle Umfeld oder das für die Verwendung des LO geeignete Bildungsniveau angeben."@de;
+  sdo:name "LRE Educational Learning Context"@de .
 
 <http://example.org/49> a wd:Q1469824;
-  sdo:name "Educational Context (LOM-DE)"@de;
-  sdo:description "Bildungsstufen des deutschen Schulsystems, verwendet in LOM-DE."@de;
-  sdo:about "Bildungsstufen"@de;
+  wdt:P126 "FWU"@de;
   wdt:P973 <https://web.archive.org/web/20220120213540/https://sodis.de/lom-de/LOM-DE_v0.9_1.pdf>;
-  wdt:P126 "FWU"@de .
+  sdo:about "Bildungsstufen"@de;
+  sdo:description "Bildungsstufen des deutschen Schulsystems, verwendet in LOM-DE."@de;
+  sdo:name "Educational Context (LOM-DE)"@de .
 
 <http://example.org/50> a wd:Q1469824;
-  sdo:name "Klassenstufe"@de;
-  sdo:description "Eine Wertelliste für Klassenstufen. Entstanden im Kontext des OpenEduHub."@de;
-  sdo:about "Klassenstufen, Jahrgangsstufen oder Fachsemester"@de;
+  wdt:P126 "WirLernenOnline"@de;
   wdt:P973 <http://w3id.org/openeduhub/vocabs/educationalLevel/>;
-  wdt:P126 "WirLernenOnline"@de .
+  sdo:about "Klassenstufen, Jahrgangsstufen oder Fachsemester"@de;
+  sdo:description "Eine Wertelliste für Klassenstufen. Entstanden im Kontext des OpenEduHub."@de;
+  sdo:name "Klassenstufe"@de .
 
 <http://example.org/51> a wd:Q1469824;
-  sdo:name "XSchule: Jahrgangsstufe"@de;
-  sdo:description "Jahrgangsstufen des allgemeinbildenden Schulsystems."@de;
-  sdo:about "Klassenstufen, Jahrgangsstufen oder Fachsemester"@de;
+  wdt:P126 "XSchule"@de;
   wdt:P973 <https://web.archive.org/web/20240210154653/https://xschule.digital/def/xschule/1.0/spec/xsc_spezifikation_1.0.pdf>;
-  wdt:P126 "XSchule"@de .
+  sdo:about "Klassenstufen, Jahrgangsstufen oder Fachsemester"@de;
+  sdo:description "Jahrgangsstufen des allgemeinbildenden Schulsystems."@de;
+  sdo:name "XSchule: Jahrgangsstufe"@de .
 
 <http://example.org/52> a wd:Q1469824;
-  sdo:name "Meta-Videoportal unterrichtsvideos.net (Repo): Jahrgangsstufen"@de;
-  sdo:description "Eine Wertelliste für die Jahrgangsstufe."@de;
-  sdo:about "Klassenstufen, Jahrgangsstufen oder Fachsemester"@de;
-  wdt:P973 <https://unterrichtsvideos.github.io/vocabs/w3id.org/unterrichtsvideos.net/vocabs/grade/index.de.html>;
+  wdt:P1324 "https://github.com/unterrichtsvideos/vocabs"@de;
   wdt:P126 "unterrichtsvideos.net"@de;
-  wdt:P1324 "https://github.com/unterrichtsvideos/vocabs"@de .
+  wdt:P973 <https://unterrichtsvideos.github.io/vocabs/w3id.org/unterrichtsvideos.net/vocabs/grade/index.de.html>;
+  sdo:about "Klassenstufen, Jahrgangsstufen oder Fachsemester"@de;
+  sdo:description "Eine Wertelliste für die Jahrgangsstufe."@de;
+  sdo:name "Meta-Videoportal unterrichtsvideos.net (Repo): Jahrgangsstufen"@de .
 
 <http://example.org/53> a wd:Q1469824;
-  sdo:name "Fachsemester"@de;
+  wdt:P973 <https://web.archive.org/web/20231215062855/https://doku.tid.dfn.de/de:elearning_attributes#a14>;
   sdo:about "Klassenstufen, Jahrgangsstufen oder Fachsemester"@de;
-  wdt:P973 <https://web.archive.org/web/20231215062855/https://doku.tid.dfn.de/de:elearning_attributes#a14> .
+  sdo:name "Fachsemester"@de .
 
 <http://example.org/54> a wd:Q1469824;
-  sdo:name "Schularten-Vokabular"@de;
-  sdo:description "Eine Wertelliste für Schularten im deutschen Schulsystem. Eine Schulart zeichnet sich dadurch aus, dass sie im Hinblick auf Lehrpläne, Bildungsziele und Qualifkationsniveau einen eigenständigen Charakter besitzt. Sie muss dazu keine verwaltungstechnische eigenständige Organisationseinheit sein."@de;
-  sdo:about "Schularten, Schultypen, Schulformen"@de;
-  wdt:P973 <https://w3id.org/kim/schularten/>;
+  wdt:P1324 "https://github.com/dini-ag-kim/schularten"@de;
   wdt:P126 "DINI-AG-KIM"@de;
-  wdt:P1324 "https://github.com/dini-ag-kim/schularten"@de .
+  wdt:P973 <https://w3id.org/kim/schularten/>;
+  sdo:about "Schularten, Schultypen, Schulformen"@de;
+  sdo:description "Eine Wertelliste für Schularten im deutschen Schulsystem. Eine Schulart zeichnet sich dadurch aus, dass sie im Hinblick auf Lehrpläne, Bildungsziele und Qualifkationsniveau einen eigenständigen Charakter besitzt. Sie muss dazu keine verwaltungstechnische eigenständige Organisationseinheit sein."@de;
+  sdo:name "Schularten-Vokabular"@de .
 
 <http://example.org/55> a wd:Q1469824;
-  sdo:name "Schularten-Vokabular"@de;
-  sdo:description "Eine Werteliste der Schularten, die es in Deutschland gibt."@de;
-  sdo:about "Schularten, Schultypen, Schulformen"@de;
+  wdt:P126 "WirLernenOnline"@de;
   wdt:P973 <http://w3id.org/openeduhub/vocabs/schoolType/>;
-  wdt:P126 "WirLernenOnline"@de .
+  sdo:about "Schularten, Schultypen, Schulformen"@de;
+  sdo:description "Eine Werteliste der Schularten, die es in Deutschland gibt."@de;
+  sdo:name "Schularten-Vokabular"@de .
 
 <http://example.org/56> a wd:Q1469824;
-  sdo:name "Schularten Mundo"@de;
-  sdo:description "Wertelisten von Schularten bei mundo.schule"@de;
-  sdo:about "\"Schularten, Schultypen, Schulformen\""@de;
+  wdt:P126 "FWU / SODIX"@de;
   wdt:P973 <https://mundo.schule/>;
-  wdt:P126 "FWU / SODIX"@de .
+  sdo:about "\"Schularten, Schultypen, Schulformen\""@de;
+  sdo:description "Wertelisten von Schularten bei mundo.schule"@de;
+  sdo:name "Schularten Mundo"@de .
 
 <http://example.org/57> a wd:Q1469824;
-  sdo:name "Art der Schule"@de;
-  sdo:description "Basierend auf Kerndatensatz der Länder für schulstatistische Individualdaten"@de;
-  sdo:about "Schularten, Schultypen, Schulformen"@de;
+  wdt:P126 "XBildung"@de;
   wdt:P973 <https://web.archive.org/web/20240210154500/https://xbildung.de/def/xbildung/1.0/spec/xbd_spezifikation_1.0.pdf>;
-  wdt:P126 "XBildung"@de .
+  sdo:about "Schularten, Schultypen, Schulformen"@de;
+  sdo:description "Basierend auf Kerndatensatz der Länder für schulstatistische Individualdaten"@de;
+  sdo:name "Art der Schule"@de .
 
 <http://example.org/58> a wd:Q1469824;
-  sdo:name "Schularten"@de;
-  sdo:description "Schularten aus dem Datenportal BMBF."@de;
-  sdo:about "Schularten, Schultypen, Schulformen"@de;
+  wdt:P126 "Statistisches Bundesamt"@de;
   wdt:P973 <https://www.datenportal.bmbf.de/portal/de/K231.html>;
-  wdt:P126 "Statistisches Bundesamt"@de .
+  sdo:about "Schularten, Schultypen, Schulformen"@de;
+  sdo:description "Schularten aus dem Datenportal BMBF."@de;
+  sdo:name "Schularten"@de .
 
 <http://example.org/59> a wd:Q1469824;
-  sdo:name "Schularten"@de;
-  sdo:description "Schularten der Plattform fobizz."@de;
-  sdo:about "Schularten, Schultypen, Schulformen"@de;
+  wdt:P126 "fobizz"@de;
   wdt:P973 <https://plattform.fobizz.com/fortbildungen>;
-  wdt:P126 "fobizz"@de .
+  sdo:about "Schularten, Schultypen, Schulformen"@de;
+  sdo:description "Schularten der Plattform fobizz."@de;
+  sdo:name "Schularten"@de .
 
 <http://example.org/60> a wd:Q1469824;
-  sdo:name "Schularten"@de;
-  sdo:description "Schularten von unterrrichtsvideos.net"@de;
-  sdo:about "Schularten, Schultypen, Schulformen"@de;
-  wdt:P973 <https://unterrichtsvideos.net/metaportal/>;
+  wdt:P1324 "https://github.com/unterrichtsvideos/vocabs"@de;
   wdt:P126 "unterrichtsvideos.net"@de;
-  wdt:P1324 "https://github.com/unterrichtsvideos/vocabs"@de .
+  wdt:P973 <https://unterrichtsvideos.net/metaportal/>;
+  sdo:about "Schularten, Schultypen, Schulformen"@de;
+  sdo:description "Schularten von unterrrichtsvideos.net"@de;
+  sdo:name "Schularten"@de .
 
 <http://example.org/61> a wd:Q1469824;
-  sdo:name "Schularten"@de;
-  sdo:description "Schularten nach meinunterricht.de"@de;
-  sdo:about "Schularten, Schultypen, Schulformen"@de;
+  wdt:P126 "MeinUnterrricht"@de;
   wdt:P973 <https://www.meinunterricht.de/>;
-  wdt:P126 "MeinUnterrricht"@de .
+  sdo:about "Schularten, Schultypen, Schulformen"@de;
+  sdo:description "Schularten nach meinunterricht.de"@de;
+  sdo:name "Schularten"@de .
 
 <http://example.org/62> a wd:Q1469824;
-  sdo:name "Schularten"@de;
-  sdo:description "Schularten des digitallearninglab.de"@de;
-  sdo:about "Schularten, Schultypen, Schulformen"@de;
+  wdt:P126 "digital.learning.lab"@de;
   wdt:P973 <https://digitallearninglab.de/api/schoolTypes>;
-  wdt:P126 "digital.learning.lab"@de .
+  sdo:about "Schularten, Schultypen, Schulformen"@de;
+  sdo:description "Schularten des digitallearninglab.de"@de;
+  sdo:name "Schularten"@de .
 
 <http://example.org/63> a wd:Q1469824;
-  sdo:name "SIF Data Model (UK, AU, NZ, NA)"@de;
-  sdo:description "School Type / Organisation Type innerhalb der Schools Interoperability Framework Implementation Specification"@de;
-  sdo:about "Schularten, Schultypen, Schulformen"@de;
+  wdt:P126 "SIF Association"@de;
   wdt:P973 <https://data.a4l.org/sif-specifications/>;
-  wdt:P126 "SIF Association"@de .
+  sdo:about "Schularten, Schultypen, Schulformen"@de;
+  sdo:description "School Type / Organisation Type innerhalb der Schools Interoperability Framework Implementation Specification"@de;
+  sdo:name "SIF Data Model (UK, AU, NZ, NA)"@de .
 
 <http://example.org/64> a wd:Q1469824;
-  sdo:name "Schulabschlüsse"@de;
-  sdo:description "Schulabschlüsse nach XHochschule mit ISCED Mapping."@de;
-  sdo:about "Abschlüsse"@de;
-  wdt:P973 <https://xhochschule.de/def/xhochschule/0.92/spec/spezifikation_0.92.pdf>;
+  wdt:P7374 "Schule"@de;
   wdt:P126 "XSchule"@de;
-  wdt:P7374 "Schule"@de .
+  wdt:P973 <https://xhochschule.de/def/xhochschule/0.92/spec/spezifikation_0.92.pdf>;
+  sdo:about "Abschlüsse"@de;
+  sdo:description "Schulabschlüsse nach XHochschule mit ISCED Mapping."@de;
+  sdo:name "Schulabschlüsse"@de .
 
 <http://example.org/65> a wd:Q1469824;
-  sdo:name "Schulabschlüsse"@de;
-  sdo:description "Schulabschlüsse mit Mappings zu Wikidata und DNB."@de;
-  sdo:about "Abschlüsse"@de;
-  wdt:P973 <https://w3id.org/kim/schulabschluesse/>;
+  wdt:P7374 "Schule"@de;
   wdt:P126 "DINI-AG-KIM"@de;
-  wdt:P7374 "Schule"@de .
+  wdt:P973 <https://w3id.org/kim/schulabschluesse/>;
+  sdo:about "Abschlüsse"@de;
+  sdo:description "Schulabschlüsse mit Mappings zu Wikidata und DNB."@de;
+  sdo:name "Schulabschlüsse"@de .
 
 <http://example.org/66> a wd:Q1469824;
-  sdo:name "Hochschulabschlüsse"@de;
-  sdo:description "Hochschulabschlüsse nach XHochschule mit ISCED Mapping."@de;
-  sdo:about "Abschlüsse"@de;
-  wdt:P973 <https://xhochschule.de/def/xhochschule/0.92/spec/spezifikation_0.92.pdf>;
+  wdt:P7374 "Hochschule"@de;
   wdt:P126 "XHochschule"@de;
-  wdt:P7374 "Hochschule"@de .
+  wdt:P973 <https://xhochschule.de/def/xhochschule/0.92/spec/spezifikation_0.92.pdf>;
+  sdo:about "Abschlüsse"@de;
+  sdo:description "Hochschulabschlüsse nach XHochschule mit ISCED Mapping."@de;
+  sdo:name "Hochschulabschlüsse"@de .
 
 <http://example.org/67> a wd:Q1469824;
-  sdo:name "Destatis Schlüsseltabellen für Abschlüsse im Erhebungsportal"@de;
-  sdo:description "Hochschulabschlüsse nach Destatis."@de;
-  sdo:about "Abschlüsse"@de;
-  wdt:P973 <https://erhebungsportal.estatistik.de/Erhebungsportal/informationen/statistik-der-studenten-372>;
-  wdt:P126 "Destatis"@de;
+  wdt:P7374 "Hochschule"@de;
   wdt:P1324 "https://github.com/dini-ag-kim/destatis-schluesseltabellen"@de;
-  wdt:P7374 "Hochschule"@de .
+  wdt:P126 "Destatis"@de;
+  wdt:P973 <https://erhebungsportal.estatistik.de/Erhebungsportal/informationen/statistik-der-studenten-372>;
+  sdo:about "Abschlüsse"@de;
+  sdo:description "Hochschulabschlüsse nach Destatis."@de;
+  sdo:name "Destatis Schlüsseltabellen für Abschlüsse im Erhebungsportal"@de .
 
 <http://example.org/68> a wd:Q1469824;
-  sdo:name "Abschlüsse"@de;
-  sdo:description "Hochschulabschlüsse, verwendet bei Hochschulkompass."@de;
-  sdo:about "Abschlüsse"@de;
-  wdt:P973 <https://www.hochschulkompass.de/>;
+  wdt:P7374 "Hochschule"@de;
   wdt:P126 "Hochschulrektorenkonferenz"@de;
-  wdt:P7374 "Hochschule"@de .
+  wdt:P973 <https://www.hochschulkompass.de/>;
+  sdo:about "Abschlüsse"@de;
+  sdo:description "Hochschulabschlüsse, verwendet bei Hochschulkompass."@de;
+  sdo:name "Abschlüsse"@de .
 
 <http://example.org/69> a wd:Q1469824;
-  sdo:name "Lehramtstypen"@de;
-  sdo:description "Eine Werteliste für Lehramtstypen, für die die Ressource geeignet ist."@de;
-  sdo:about "Abschlüsse"@de;
-  wdt:P973 <http://w3id.org/kim/kmk-vocabs/lehramtstypen/>;
+  wdt:P7374 "Hochschule"@de;
   wdt:P126 "DINI-AG-KIM"@de;
-  wdt:P7374 "Hochschule"@de .
+  wdt:P973 <http://w3id.org/kim/kmk-vocabs/lehramtstypen/>;
+  sdo:about "Abschlüsse"@de;
+  sdo:description "Eine Werteliste für Lehramtstypen, für die die Ressource geeignet ist."@de;
+  sdo:name "Lehramtstypen"@de .
 
 <http://example.org/70> a wd:Q1469824;
-  sdo:name "Verzeichnis der anerkannten Ausbildungsberufe"@de;
-  sdo:description "Dieses Standardwerk dokumentiert die gültigen Rechtsgrundlagen aller Ausbildungsberufe nach BBiG und HwO. Darüber hinaus enthält es Fortbildungsregelungen sowie bundesrechtliche und landesrechtliche Regelungen zur Ausbildung und Weiterbildung für Berufe im Gesundheits- und Sozialwesen und vieles mehr. Das Verzeichnis wird jährlich aktualisiert."@de;
-  sdo:about "Abschlüsse"@de;
-  wdt:P973 <https://www.bibb.de/dienst/publikationen/de/suche?publication_search_result_voe%5Bseries%5D=verzeichnis%20der%20anerkannten%20ausbildungsberufe&publication_search_result_voe%5BentriesPerPage%5D=10&publication_search_result_voe%5Bsorting%5D=newest_desc>;
+  wdt:P7374 "Ausbildung"@de;
   wdt:P126 "Bundesinstitut für Berufsbildung"@de;
-  wdt:P7374 "Ausbildung"@de .
+  wdt:P973 <https://www.bibb.de/dienst/publikationen/de/suche?publication_search_result_voe%5Bseries%5D=verzeichnis%20der%20anerkannten%20ausbildungsberufe&publication_search_result_voe%5BentriesPerPage%5D=10&publication_search_result_voe%5Bsorting%5D=newest_desc>;
+  sdo:about "Abschlüsse"@de;
+  sdo:description "Dieses Standardwerk dokumentiert die gültigen Rechtsgrundlagen aller Ausbildungsberufe nach BBiG und HwO. Darüber hinaus enthält es Fortbildungsregelungen sowie bundesrechtliche und landesrechtliche Regelungen zur Ausbildung und Weiterbildung für Berufe im Gesundheits- und Sozialwesen und vieles mehr. Das Verzeichnis wird jährlich aktualisiert."@de;
+  sdo:name "Verzeichnis der anerkannten Ausbildungsberufe"@de .
 
 <http://example.org/71> a wd:Q1469824;
-  sdo:name "Beruf / Berufsfeld"@de;
-  sdo:description "Liste von Berufen des Hubs für berufliche Schulen."@de;
-  sdo:about "Abschlüsse"@de;
+  wdt:P126 "FWU"@de;
   wdt:P973 <https://hubbs.schule/search/mediathek>;
-  wdt:P126 "FWU"@de .
+  sdo:about "Abschlüsse"@de;
+  sdo:description "Liste von Berufen des Hubs für berufliche Schulen."@de;
+  sdo:name "Beruf / Berufsfeld"@de .
 
 <http://example.org/72> a wd:Q1469824;
-  sdo:name "Thema / Trainings"@de;
-  sdo:description "Auflistung von Themen für Weiterbildungstrainigs."@de;
-  sdo:about "Abschlüsse"@de;
+  wdt:P126 "NETZWERK Q 4.0"@de;
   wdt:P973 <https://netzwerkq40.de/learning-nuggets-lernmedien-fuer-ausbilderinnen/>;
-  wdt:P126 "NETZWERK Q 4.0"@de .
+  sdo:about "Abschlüsse"@de;
+  sdo:description "Auflistung von Themen für Weiterbildungstrainigs."@de;
+  sdo:name "Thema / Trainings"@de .
 
 <http://example.org/73> a wd:Q1469824;
-  sdo:name "Abschluss"@de;
-  sdo:description "Eine Wertelliste für schulische und Hochschulabschlüsse. Entstanden im Kontext des OpenEduHub."@de;
-  sdo:about "Abschlüsse"@de;
-  wdt:P973 <http://w3id.org/openeduhub/vocabs/graduation/>;
+  wdt:P7374 "Bildungsbereichsübergreifend"@de;
   wdt:P126 "WirLernenOnline"@de;
-  wdt:P7374 "Bildungsbereichsübergreifend"@de .
+  wdt:P973 <http://w3id.org/openeduhub/vocabs/graduation/>;
+  sdo:about "Abschlüsse"@de;
+  sdo:description "Eine Wertelliste für schulische und Hochschulabschlüsse. Entstanden im Kontext des OpenEduHub."@de;
+  sdo:name "Abschluss"@de .
 
 <http://example.org/74> a wd:Q1469824;
-  sdo:name "Abschlüsse (European Schoolnet Vocabulary: Ed Level/Degree Earned Values)"@de;
-  sdo:description "Liste von Abschlüssen im European Schoolnet."@de;
-  sdo:about "Abschlüsse"@de;
+  wdt:P126 "European Schoolnet Vocabulary Bank for Education"@de;
   wdt:P973 <http://europeanschoolnet-vbe.lexaurus.net/vbe/browse>;
-  wdt:P126 "European Schoolnet Vocabulary Bank for Education"@de .
+  sdo:about "Abschlüsse"@de;
+  sdo:description "Liste von Abschlüssen im European Schoolnet."@de;
+  sdo:name "Abschlüsse (European Schoolnet Vocabulary: Ed Level/Degree Earned Values)"@de .
 
 <http://example.org/75> a wd:Q1469824;
-  sdo:name "ACTFL-Leitlinien zur Sprachbeherrschung "@de;
-  sdo:about "Sprache"@de;
+  wdt:P126 "ACTFL"@de;
   wdt:P973 <https://www.actfl.org/educator-resources/actfl-proficiency-guidelines>;
-  wdt:P126 "ACTFL"@de .
+  sdo:about "Sprache"@de;
+  sdo:name "ACTFL-Leitlinien zur Sprachbeherrschung "@de .
 
 <http://example.org/76> a wd:Q1469824;
-  sdo:name """
-ISO 639-1 Sprachthesaurus"""@de;
-  sdo:description "Sprachthesaurus gemäß ISO 639-1"@de;
-  sdo:about "Sprache"@de;
+  wdt:P126 "Universität für angewandte Kunst Wien"@de;
   wdt:P973 <https://voc.uni-ak.ac.at/skosmos/languages/de/>;
-  wdt:P126 "Universität für angewandte Kunst Wien"@de .
+  sdo:about "Sprache"@de;
+  sdo:description "Sprachthesaurus gemäß ISO 639-1"@de;
+  sdo:name """
+ISO 639-1 Sprachthesaurus"""@de .
 
 <http://example.org/77> a wd:Q1469824;
-  sdo:name "Sprachen (MARC)"@de;
-  sdo:description "Die MARC-Liste für Sprachen enthält dreistellige, klein geschriebene Buchstabenfolgen, die als Bezeichner für Sprachen und Sprachgruppen dienen. Die Codes basieren in der Regel auf den ersten drei Buchstaben der englischen Form oder, in einigen Fällen, der landessprachlichen Form des entsprechenden Sprachnamens. Die Codes werden bei Bedarf variiert, um Konflikte zu lösen, und sind nicht als Abkürzungen für einen Sprachnamen gedacht. Wenn der Name einer Sprache in der Liste geändert wird, wird der ursprüngliche Code im Allgemeinen beibehalten. Die Codes in dieser Liste entsprechen den Codes der ISO 639-2 (bibliografische Codes) und einigen Codes der ISO 639-5, auch wenn die Bezeichnungen der Sprachnamen unterschiedlich sein können. Sie sind mit den entsprechenden Codes in ISO 639-2 und ISO 639-5 und den entsprechenden zweistelligen Codes in ISO 639-1 verknüpft. Die Liste enthält über 480 diskrete Codes. Sie ist auch durchsuchbar unter: MARC-Code-Liste für Sprachen."@de;
-  sdo:about "Sprache"@de;
+  wdt:P126 "Library of Congress"@de;
   wdt:P973 <http://id.loc.gov/vocabulary/languages>;
-  wdt:P126 "Library of Congress"@de .
+  sdo:about "Sprache"@de;
+  sdo:description "Die MARC-Liste für Sprachen enthält dreistellige, klein geschriebene Buchstabenfolgen, die als Bezeichner für Sprachen und Sprachgruppen dienen. Die Codes basieren in der Regel auf den ersten drei Buchstaben der englischen Form oder, in einigen Fällen, der landessprachlichen Form des entsprechenden Sprachnamens. Die Codes werden bei Bedarf variiert, um Konflikte zu lösen, und sind nicht als Abkürzungen für einen Sprachnamen gedacht. Wenn der Name einer Sprache in der Liste geändert wird, wird der ursprüngliche Code im Allgemeinen beibehalten. Die Codes in dieser Liste entsprechen den Codes der ISO 639-2 (bibliografische Codes) und einigen Codes der ISO 639-5, auch wenn die Bezeichnungen der Sprachnamen unterschiedlich sein können. Sie sind mit den entsprechenden Codes in ISO 639-2 und ISO 639-5 und den entsprechenden zweistelligen Codes in ISO 639-1 verknüpft. Die Liste enthält über 480 diskrete Codes. Sie ist auch durchsuchbar unter: MARC-Code-Liste für Sprachen."@de;
+  sdo:name "Sprachen (MARC)"@de .
 
 <http://example.org/78> a wd:Q1469824;
-  sdo:name "Sprachen ISO 639-1"@de;
-  sdo:description "ISO 639-1 ist der erste Teil der internationalen ISO 639-Sprachcodefamilie. ISO 639-1 enthält zweistellige, klein geschriebene Buchstabenfolgen, die zur Identifizierung von Sprachen dienen. Die Liste enthält etwa 180 diskrete Codes. Für alle ISO 639-1-Sprachen gibt es auch ISO 639-2-Codes mit drei Zeichen. Diese Codes sind mit den Codes für dieselben Sprachen in ISO 639-2 und den MARC Language Codes verknüpft."@de;
-  sdo:about "Sprache"@de;
+  wdt:P126 "Library of Congress"@de;
   wdt:P973 <http://id.loc.gov/vocabulary/iso639-1>;
-  wdt:P126 "Library of Congress"@de .
+  sdo:about "Sprache"@de;
+  sdo:description "ISO 639-1 ist der erste Teil der internationalen ISO 639-Sprachcodefamilie. ISO 639-1 enthält zweistellige, klein geschriebene Buchstabenfolgen, die zur Identifizierung von Sprachen dienen. Die Liste enthält etwa 180 diskrete Codes. Für alle ISO 639-1-Sprachen gibt es auch ISO 639-2-Codes mit drei Zeichen. Diese Codes sind mit den Codes für dieselben Sprachen in ISO 639-2 und den MARC Language Codes verknüpft."@de;
+  sdo:name "Sprachen ISO 639-1"@de .
 
 <http://example.org/79> a wd:Q1469824;
-  sdo:name "Sprachen ISO 639-2"@de;
-  sdo:description "ISO 639-2 ist Teil der ISO 639-Sprachcodefamilie, die auch einen zweistelligen Codesatz (ISO 639-1) für die Darstellung von Sprachnamen enthält. ISO 639-2 enthält Codes für alle in ISO 639-1 enthaltenen Sprachen und mehrere hundert weitere Sprachen. Die Codes von ISO 639-2 (Bibliografie) wurden für die Verwendung in bibliografischen Metadaten entwickelt, z. B. für Bibliotheken, Informationsdienste und Verlage, während ISO 639-2 (Terminologie) auf Terminologie, Lexikografie und linguistische Anwendungen ausgerichtet ist. Die Listen sind identisch, mit Ausnahme von 20 Sprachen, die unterschiedliche bibliographische und terminologische Codes haben. Die Liste enthält über 500 diskrete Codes. Die ISO 639-2 (bibliographischen) Codes entsprechen den MARC-Sprachcodes. Die ISO 639-2-Codes sind mit zweistelligen Codes für dieselbe Sprache in ISO 639-1, mit den MARC-Sprachcodes und mit entsprechenden Codes für Sprachgruppen in ISO 639-5 verknüpft."@de;
-  sdo:about "Sprache"@de;
+  wdt:P126 "Library of Congress"@de;
   wdt:P973 <http://id.loc.gov/vocabulary/iso639-2>;
-  wdt:P126 "Library of Congress"@de .
+  sdo:about "Sprache"@de;
+  sdo:description "ISO 639-2 ist Teil der ISO 639-Sprachcodefamilie, die auch einen zweistelligen Codesatz (ISO 639-1) für die Darstellung von Sprachnamen enthält. ISO 639-2 enthält Codes für alle in ISO 639-1 enthaltenen Sprachen und mehrere hundert weitere Sprachen. Die Codes von ISO 639-2 (Bibliografie) wurden für die Verwendung in bibliografischen Metadaten entwickelt, z. B. für Bibliotheken, Informationsdienste und Verlage, während ISO 639-2 (Terminologie) auf Terminologie, Lexikografie und linguistische Anwendungen ausgerichtet ist. Die Listen sind identisch, mit Ausnahme von 20 Sprachen, die unterschiedliche bibliographische und terminologische Codes haben. Die Liste enthält über 500 diskrete Codes. Die ISO 639-2 (bibliographischen) Codes entsprechen den MARC-Sprachcodes. Die ISO 639-2-Codes sind mit zweistelligen Codes für dieselbe Sprache in ISO 639-1, mit den MARC-Sprachcodes und mit entsprechenden Codes für Sprachgruppen in ISO 639-5 verknüpft."@de;
+  sdo:name "Sprachen ISO 639-2"@de .
 
 <http://example.org/80> a wd:Q1469824;
-  sdo:name "Sprachen ISO 6395"@de;
-  sdo:description "ISO 639-5 enthält dreistellige klein geschriebene Buchstabenfolgen, die als Bezeichner für die Darstellung von Namen lebender und ausgestorbener Sprachfamilien und Sprachgruppen dienen. Die Liste enthält über 100 diskrete Codes. Die Codes in dieser Liste umfassen alle Codes für Sprachgruppen im MARC-Sprachcodeschema und über 40 weitere Gruppen. Die Codes sind mit den entsprechenden Codes in der MARC-Sprachcodeliste und in ISO 639-2 verknüpft."@de;
-  sdo:about "Sprache"@de;
+  wdt:P126 "Library of Congress"@de;
   wdt:P973 <http://id.loc.gov/vocabulary/iso639-5>;
-  wdt:P126 "Library of Congress"@de .
+  sdo:about "Sprache"@de;
+  sdo:description "ISO 639-5 enthält dreistellige klein geschriebene Buchstabenfolgen, die als Bezeichner für die Darstellung von Namen lebender und ausgestorbener Sprachfamilien und Sprachgruppen dienen. Die Liste enthält über 100 diskrete Codes. Die Codes in dieser Liste umfassen alle Codes für Sprachgruppen im MARC-Sprachcodeschema und über 40 weitere Gruppen. Die Codes sind mit den entsprechenden Codes in der MARC-Sprachcodeliste und in ISO 639-2 verknüpft."@de;
+  sdo:name "Sprachen ISO 6395"@de .
 
 <http://example.org/81> a wd:Q1469824;
-  sdo:name "Zielgruppe"@de;
-  sdo:description "Das LRMI Audience Role Vocabulary definiert die primären oder beabsichtigten Rollen des Publikums (Nutznießers) der beschriebenen Ressource. Es dient der Bereitstellung von Werten für die Eigenschaft lrmi educationalRole."@de;
-  sdo:about "Zielgruppe"@de;
+  wdt:P126 "Learning Resource Metadata Initiative"@de;
   wdt:P973 <https://www.dublincore.org/specifications/lrmi/concept_schemes/educationalAudienceRole/>;
-  wdt:P126 "Learning Resource Metadata Initiative"@de .
+  sdo:about "Zielgruppe"@de;
+  sdo:description "Das LRMI Audience Role Vocabulary definiert die primären oder beabsichtigten Rollen des Publikums (Nutznießers) der beschriebenen Ressource. Es dient der Bereitstellung von Werten für die Eigenschaft lrmi educationalRole."@de;
+  sdo:name "Zielgruppe"@de .
 
 <http://example.org/82> a wd:Q1469824;
-  sdo:name "Zielgruppe"@de;
+  wdt:P126 "LOM"@de;
   sdo:about "Zielgruppe"@de;
-  wdt:P126 "LOM"@de .
+  sdo:name "Zielgruppe"@de .
 
 <http://example.org/83> a wd:Q1469824;
-  sdo:name "Zielgruppe"@de;
-  sdo:description "Eine Werteliste für Rollen, für die die Ressource erstellt wurde. Entstanden im Kontext des OpenEduHub."@de;
-  sdo:about "Zielgruppe"@de;
+  wdt:P126 "WirLernenOnline"@de;
   wdt:P973 <http://w3id.org/openeduhub/vocabs/intendedEndUserRole/>;
-  wdt:P126 "WirLernenOnline"@de .
+  sdo:about "Zielgruppe"@de;
+  sdo:description "Eine Werteliste für Rollen, für die die Ressource erstellt wurde. Entstanden im Kontext des OpenEduHub."@de;
+  sdo:name "Zielgruppe"@de .
 
 <http://example.org/84> a wd:Q1469824;
-  sdo:name "Zielgruppe (EUN Target Groups,)"@de;
-  sdo:description "Werteliste von Zielgruppen des Eurpean Schoolnet."@de;
-  sdo:about "Zielgruppe"@de;
+  wdt:P126 "European Schoolnet Vocabulary Bank for Education"@de;
   wdt:P973 <http://europeanschoolnet-vbe.lexaurus.net/vbe/browse>;
-  wdt:P126 "European Schoolnet Vocabulary Bank for Education"@de .
+  sdo:about "Zielgruppe"@de;
+  sdo:description "Werteliste von Zielgruppen des Eurpean Schoolnet."@de;
+  sdo:name "Zielgruppe (EUN Target Groups,)"@de .
 
 <http://example.org/85> a wd:Q1469824;
-  sdo:name "Library of Congress (intended Audience),"@de;
-  sdo:description "Benutzerkategorie, für die der Inhalt einer Ressource bestimmt ist oder für die der Inhalt als geeignet angesehen wird."@de;
-  sdo:about "Zielgruppe"@de;
+  wdt:P126 "Library of Congress"@de;
   wdt:P973 <http://id.loc.gov/vocabulary/maudience>;
-  wdt:P126 "Library of Congress"@de .
+  sdo:about "Zielgruppe"@de;
+  sdo:description "Benutzerkategorie, für die der Inhalt einer Ressource bestimmt ist oder für die der Inhalt als geeignet angesehen wird."@de;
+  sdo:name "Library of Congress (intended Audience),"@de .
 
 <http://example.org/86> a wd:Q1469824;
-  sdo:name "Zielgruppen"@de;
-  sdo:description "Rollen die bei Schulflix verwendet werden."@de;
-  sdo:about "Zielgruppe"@de;
+  wdt:P126 "Schulflix"@de;
   wdt:P973 <https://www.schulflix.com/kurskatalog/>;
-  wdt:P126 "Schulflix"@de .
+  sdo:about "Zielgruppe"@de;
+  sdo:description "Rollen die bei Schulflix verwendet werden."@de;
+  sdo:name "Zielgruppen"@de .
 
 <http://example.org/87> a wd:Q1469824;
-  sdo:name "Personengruppen"@de;
-  sdo:description "Eine Werteliste für Zielgruppen als Lernende, für welche die Ressource konzipiert wurde."@de;
-  sdo:about "Zielgruppe"@de;
+  wdt:P126 "Come In"@de;
   wdt:P973 <https://w3id.org/comein/vocabs/educationalAudienceRole/>;
-  wdt:P126 "Come In"@de .
+  sdo:about "Zielgruppe"@de;
+  sdo:description "Eine Werteliste für Zielgruppen als Lernende, für welche die Ressource konzipiert wurde."@de;
+  sdo:name "Personengruppen"@de .
 
 <http://example.org/88> a wd:Q1469824;
-  sdo:name "Personengruppen"@de;
-  sdo:description "Eine Werteliste für die Zielgruppen von Bildungsangeboten, wie sie im BIRD Referenzprojekt angelegt wurde."@de;
-  sdo:about "Zielgruppe"@de;
+  wdt:P126 "WirLernenOnline"@de;
   wdt:P973 <http://w3id.org/openeduhub/vocabs/intendedEndUserRole_BIRD/>;
-  wdt:P126 "WirLernenOnline"@de .
+  sdo:about "Zielgruppe"@de;
+  sdo:description "Eine Werteliste für die Zielgruppen von Bildungsangeboten, wie sie im BIRD Referenzprojekt angelegt wurde."@de;
+  sdo:name "Personengruppen"@de .
 
 <http://example.org/89> a wd:Q1469824;
-  sdo:name "Zielgruppe"@de;
-  sdo:description "Zielgruppen Vokabular im hochschuldidaktischen Kontext"@de;
-  sdo:about "Zielgruppe"@de;
-  wdt:P973 <https://padlet.com/justushenke/erweitertes-amb-ycqitnb3y80hkvw1>;
+  wdt:P1324 "https://hof-halle-wittenberg.github.io/vocabs/audience/"@de;
   wdt:P126 "???"@de;
-  wdt:P1324 "https://hof-halle-wittenberg.github.io/vocabs/audience/"@de .
+  wdt:P973 <https://padlet.com/justushenke/erweitertes-amb-ycqitnb3y80hkvw1>;
+  sdo:about "Zielgruppe"@de;
+  sdo:description "Zielgruppen Vokabular im hochschuldidaktischen Kontext"@de;
+  sdo:name "Zielgruppe"@de .
 
 <http://example.org/90> a wd:Q1469824;
-  sdo:name "Werte bei OERCommons"@de;
-  sdo:description "Zielgruppen bei OER Commons."@de;
-  sdo:about "Didaktische Kontextualisierung"@de;
+  wdt:P126 "OER Commons"@de;
   wdt:P973 <https://oercommons.org/browse>;
-  wdt:P126 "OER Commons"@de .
+  sdo:about "Didaktische Kontextualisierung"@de;
+  sdo:description "Zielgruppen bei OER Commons."@de;
+  sdo:name "Werte bei OERCommons"@de .
 
 <http://example.org/91> a wd:Q1469824;
-  sdo:name "LRT LOM"@de;
+  wdt:P126 "IEEE"@de;
   sdo:about "Ressourcentyp, Medientyp"@de;
-  wdt:P126 "IEEE"@de .
+  sdo:name "LRT LOM"@de .
 
 <http://example.org/92> a wd:Q1469824;
-  sdo:name "LRT LOM-DE"@de;
+  wdt:P126 "FWU"@de;
   sdo:about "Ressourcentyp, Medientyp"@de;
-  wdt:P126 "FWU"@de .
+  sdo:name "LRT LOM-DE"@de .
 
 <http://example.org/93> a wd:Q1469824;
-  sdo:name " Hochschulcampus Ressourcentypen (HCRT)"@de;
-  sdo:description "Eine Wertelliste für Typen von Lernressourcen (Learning Resource Type), entstanden im Kontext des Metadatenschemas \"LOM for Higher Education OER Repositories\" (https://w3id.org/dini-ag-kim/hs-oer-lom-profil/latest/)."@de;
-  sdo:about "Ressourcentyp, Medientyp"@de;
-  wdt:P973 <https://w3id.org/kim/hcrt/scheme>;
+  wdt:P1535 "AMB, HS-OER-LOM"@de;
   wdt:P126 "DINI-AG-KIM"@de;
-  wdt:P1535 "AMB, HS-OER-LOM"@de .
+  wdt:P973 <https://w3id.org/kim/hcrt/scheme>;
+  sdo:about "Ressourcentyp, Medientyp"@de;
+  sdo:description "Eine Wertelliste für Typen von Lernressourcen (Learning Resource Type), entstanden im Kontext des Metadatenschemas \"LOM for Higher Education OER Repositories\" (https://w3id.org/dini-ag-kim/hs-oer-lom-profil/latest/)."@de;
+  sdo:name " Hochschulcampus Ressourcentypen (HCRT)"@de .
 
 <http://example.org/94> a wd:Q1469824;
-  sdo:name "Medienarten / Medienklassifikation EAF"@de;
-  sdo:description "Liste von Medienarten der AG MuD."@de;
-  sdo:about "Ressourcentyp, Medientyp"@de;
-  wdt:P973 <http://agmud.de/eaf-erweitertes-austauschformat/>;
+  wdt:P1535 "EAF"@de;
   wdt:P126 "FWU"@de;
-  wdt:P1535 "EAF"@de .
+  wdt:P973 <http://agmud.de/eaf-erweitertes-austauschformat/>;
+  sdo:about "Ressourcentyp, Medientyp"@de;
+  sdo:description "Liste von Medienarten der AG MuD."@de;
+  sdo:name "Medienarten / Medienklassifikation EAF"@de .
 
 <http://example.org/95> a wd:Q1469824;
-  sdo:name "Neuer LRT"@de;
-  sdo:description "Umfassende Zusammenstellung von Ressourcentypen. Entstanden im Kontext des OpenEduHub."@de;
-  sdo:about "Ressourcentyp, Medientyp"@de;
+  wdt:P126 "WirLernenOnline"@de;
   wdt:P973 <http://w3id.org/openeduhub/vocabs/new_lrt/>;
-  wdt:P126 "WirLernenOnline"@de .
+  sdo:about "Ressourcentyp, Medientyp"@de;
+  sdo:description "Umfassende Zusammenstellung von Ressourcentypen. Entstanden im Kontext des OpenEduHub."@de;
+  sdo:name "Neuer LRT"@de .
 
 <http://example.org/96> a wd:Q1469824;
-  sdo:name "\"Alter\" LRT"@de;
-  sdo:description "Liste von Ressourcentypen. Entstanden im Kontext des OpenEduHub."@de;
-  sdo:about "Ressourcentyp, Medientyp"@de;
+  wdt:P126 "WirLernenOnline"@de;
   wdt:P973 <http://w3id.org/openeduhub/vocabs/learningResourceType/>;
-  wdt:P126 "WirLernenOnline"@de .
+  sdo:about "Ressourcentyp, Medientyp"@de;
+  sdo:description "Liste von Ressourcentypen. Entstanden im Kontext des OpenEduHub."@de;
+  sdo:name "\"Alter\" LRT"@de .
 
 <http://example.org/97> a wd:Q1469824;
-  sdo:name "Typ der Lernressource (SODIX) alt"@de;
-  sdo:description "Eine Wertelliste für Typen von Lernressourcen, wie er im SODIX content hub zum Einsatz kommt. Geordnete Liste, der vorherrschende Typ zuerst."@de;
-  sdo:about "Ressourcentyp, Medientyp"@de;
+  wdt:P126 "SODIX"@de;
   wdt:P973 <https://vocabs.sodix.de/sodix/educational/learningresourcetype/learningresourcetype>;
-  wdt:P126 "SODIX"@de .
+  sdo:about "Ressourcentyp, Medientyp"@de;
+  sdo:description "Eine Wertelliste für Typen von Lernressourcen, wie er im SODIX content hub zum Einsatz kommt. Geordnete Liste, der vorherrschende Typ zuerst."@de;
+  sdo:name "Typ der Lernressource (SODIX) alt"@de .
 
 <http://example.org/98> a wd:Q1469824;
-  sdo:name "Typ der Lernressource (SODIX-NEW)"@de;
-  sdo:about "Ressourcentyp, Medientyp"@de;
+  wdt:P126 "SODIX"@de;
   wdt:P973 <https://vocabs.sodix.de/lernressourcentyp_NEU/>;
-  wdt:P126 "SODIX"@de .
+  sdo:about "Ressourcentyp, Medientyp"@de;
+  sdo:name "Typ der Lernressource (SODIX-NEW)"@de .
 
 <http://example.org/99> a wd:Q1469824;
-  sdo:name "Type (DCMI)"@de;
-  sdo:about "Ressourcentyp, Medientyp"@de;
+  wdt:P126 "DCMI"@de;
   wdt:P973 <https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#DCMIType>;
-  wdt:P126 "DCMI"@de .
+  sdo:about "Ressourcentyp, Medientyp"@de;
+  sdo:name "Type (DCMI)"@de .
 
 <http://example.org/100> a wd:Q1469824;
-  sdo:name "Learning Resource Type"@de;
-  sdo:description "Ein kontrolliertes Vokabular, das verschiedene Arten von Lernressourcen bezeichnet. Eine solche Ressource hat ein oder mehrere physische oder digitiale Repräsentationen und beinhaltet, spezifiziert oder bedingt eine Lernaktivität or Lernerfahrung."@de;
-  sdo:about "Ressourcentyp, Medientyp"@de;
-  wdt:P973 <http://purl.org/dcx/lrmi-vocabs/learningResourceType/>;
+  wdt:P1324 "https://github.com/dcmi/lrmi/tree/b1b223693d4c5122e9fd015c21b52349a7c58427/lrmi_vocabs/learningResourceType"@de;
   wdt:P126 "Learning Resource Metadata Initiative"@de;
-  wdt:P1324 "https://github.com/dcmi/lrmi/tree/b1b223693d4c5122e9fd015c21b52349a7c58427/lrmi_vocabs/learningResourceType"@de .
+  wdt:P973 <http://purl.org/dcx/lrmi-vocabs/learningResourceType/>;
+  sdo:about "Ressourcentyp, Medientyp"@de;
+  sdo:description "Ein kontrolliertes Vokabular, das verschiedene Arten von Lernressourcen bezeichnet. Eine solche Ressource hat ein oder mehrere physische oder digitiale Repräsentationen und beinhaltet, spezifiziert oder bedingt eine Lernaktivität or Lernerfahrung."@de;
+  sdo:name "Learning Resource Type"@de .
 
 <http://example.org/101> a wd:Q1469824;
-  sdo:name "resourceTypeGeneral"@de;
-  sdo:description "Ressourcentypen gemäß des Datacite Schemas."@de;
-  sdo:about "Ressourcentyp, Medientyp"@de;
+  wdt:P126 "DataCite Metadata Working Group"@de;
   wdt:P973 <https://schema.datacite.org/meta/kernel-4.4/doc/DataCite-MetadataKernel_v4.4.pdf>;
-  wdt:P126 "DataCite Metadata Working Group"@de .
+  sdo:about "Ressourcentyp, Medientyp"@de;
+  sdo:description "Ressourcentypen gemäß des Datacite Schemas."@de;
+  sdo:name "resourceTypeGeneral"@de .
 
 <http://example.org/102> a wd:Q1469824;
-  sdo:name "Dgital Media Type"@de;
-  sdo:description "Der Medien- oder Dateityp der digitalen Ressource basiert auf den von der Internet Assigned Numbers Authority (AINA) unter http://www.iana.org/assignments/media-types definierten Medientypen."@de;
-  sdo:about "Ressourcentyp, Medientyp"@de;
+  wdt:P126 "Common Education Data Standards"@de;
   wdt:P973 <https://ceds.ed.gov/element/001397>;
-  wdt:P126 "Common Education Data Standards"@de .
+  sdo:about "Ressourcentyp, Medientyp"@de;
+  sdo:description "Der Medien- oder Dateityp der digitalen Ressource basiert auf den von der Internet Assigned Numbers Authority (AINA) unter http://www.iana.org/assignments/media-types definierten Medientypen."@de;
+  sdo:name "Dgital Media Type"@de .
 
 <http://example.org/103> a wd:Q1469824;
-  sdo:name "Physical Media Type"@de;
-  sdo:description "Eine Art physischer Datenträger, auf dem die Lernressource bereitgestellt oder verfügbar ist."@de;
-  sdo:about "Ressourcentyp, Medientyp"@de;
+  wdt:P126 "Common Education Data Standards"@de;
   wdt:P973 <https://ceds.ed.gov/element/001401>;
-  wdt:P126 "Common Education Data Standards"@de .
+  sdo:about "Ressourcentyp, Medientyp"@de;
+  sdo:description "Eine Art physischer Datenträger, auf dem die Lernressource bereitgestellt oder verfügbar ist."@de;
+  sdo:name "Physical Media Type"@de .
 
 <http://example.org/104> a wd:Q1469824;
-  sdo:name "Educational Use"@de;
-  sdo:description "Der Zweck der Arbeit im Kontext der Bildung.Der Zweck der Arbeit im Kontext der Bildung."@de;
-  sdo:about "Ressourcentyp, Medientyp"@de;
+  wdt:P126 "Common Education Data Standards"@de;
   wdt:P973 <https://ceds.ed.gov/element/001002>;
-  wdt:P126 "Common Education Data Standards"@de .
+  sdo:about "Ressourcentyp, Medientyp"@de;
+  sdo:description "Der Zweck der Arbeit im Kontext der Bildung.Der Zweck der Arbeit im Kontext der Bildung."@de;
+  sdo:name "Educational Use"@de .
 
 <http://example.org/105> a wd:Q1469824;
-  sdo:name "Materialtypen"@de;
-  sdo:description "Eine Wertelliste für Materialtypen."@de;
-  sdo:about "Ressourcentyp, Medientyp"@de;
-  wdt:P973 <https://unterrichtsvideos.github.io/vocabs/w3id.org/unterrichtsvideos.net/vocabs/materialTypes/index.de.html>;
+  wdt:P1324 "https://github.com/unterrichtsvideos/vocabs"@de;
   wdt:P126 "unterrichtsvideos.net"@de;
-  wdt:P1324 "https://github.com/unterrichtsvideos/vocabs"@de .
+  wdt:P973 <https://unterrichtsvideos.github.io/vocabs/w3id.org/unterrichtsvideos.net/vocabs/materialTypes/index.de.html>;
+  sdo:about "Ressourcentyp, Medientyp"@de;
+  sdo:description "Eine Wertelliste für Materialtypen."@de;
+  sdo:name "Materialtypen"@de .
 
 <http://example.org/106> a wd:Q1469824;
-  sdo:name "Videotypen"@de;
-  sdo:description "Eine Wertelliste für Videoarten."@de;
-  sdo:about "Ressourcentyp, Medientyp"@de;
-  wdt:P973 <https://w3id.org/unterrichtsvideos.net/vocabs/videoTypes/>;
+  wdt:P1324 "https://github.com/unterrichtsvideos/vocabs"@de;
   wdt:P126 "unterrichtsvideos.net"@de;
-  wdt:P1324 "https://github.com/unterrichtsvideos/vocabs"@de .
+  wdt:P973 <https://w3id.org/unterrichtsvideos.net/vocabs/videoTypes/>;
+  sdo:about "Ressourcentyp, Medientyp"@de;
+  sdo:description "Eine Wertelliste für Videoarten."@de;
+  sdo:name "Videotypen"@de .
 
 <http://example.org/107> a wd:Q1469824;
-  sdo:name "Medientypen"@de;
-  sdo:description "Werteliste von Medientypen."@de;
-  sdo:about "Ressourcentyp, Medientyp"@de;
+  wdt:P126 "ORCA.nrw"@de;
   wdt:P973 <https://w3id.org/orca.nrw/medientypen/>;
-  wdt:P126 "ORCA.nrw"@de .
+  sdo:about "Ressourcentyp, Medientyp"@de;
+  sdo:description "Werteliste von Medientypen."@de;
+  sdo:name "Medientypen"@de .
 
 <http://example.org/108> a wd:Q1469824;
-  sdo:name "Materialtypen"@de;
-  sdo:description "Materialtypen des OER TX Repositories."@de;
-  sdo:about "Ressourcentyp, Medientyp"@de;
+  wdt:P126 "OERTX"@de;
   wdt:P973 <https://web.archive.org/web/20231211175418/https://oertx-help.highered.texas.gov/support/solutions/articles/42000077612-material-types>;
-  wdt:P126 "OERTX"@de .
+  sdo:about "Ressourcentyp, Medientyp"@de;
+  sdo:description "Materialtypen des OER TX Repositories."@de;
+  sdo:name "Materialtypen"@de .
 
 <http://example.org/109> a wd:Q1469824;
-  sdo:name "Materialtypen"@de;
-  sdo:description "Materialtypen des Merlot Repositories."@de;
-  sdo:about "Ressourcentyp, Medientyp"@de;
+  wdt:P126 "Merlot"@de;
   wdt:P973 <https://web.archive.org/web/20221203081203/https://info.merlot.org/merlothelp/MERLOT_Collection.htm>;
-  wdt:P126 "Merlot"@de .
+  sdo:about "Ressourcentyp, Medientyp"@de;
+  sdo:description "Materialtypen des Merlot Repositories."@de;
+  sdo:name "Materialtypen"@de .
 
 <http://example.org/110> a wd:Q1469824;
-  sdo:name "Output Types"@de;
-  sdo:description "Dieses Schema enthält CERIF-Vokabularbegriffe, die in den Verknüpfungsentitäten cfResultPublication_Classification, cfResultPatent_Classification, cfResultProduct_Classification, cfEvent_Class anwendbar sind und somit Ausgabetypen darstellen."@de;
-  sdo:about "Ressourcentyp, Medientyp"@de;
+  wdt:P126 "euroCRIS"@de;
   wdt:P973 <https://w3id.org/cerif/vocab/OutputTypes>;
-  wdt:P126 "euroCRIS"@de .
+  sdo:about "Ressourcentyp, Medientyp"@de;
+  sdo:description "Dieses Schema enthält CERIF-Vokabularbegriffe, die in den Verknüpfungsentitäten cfResultPublication_Classification, cfResultPatent_Classification, cfResultProduct_Classification, cfEvent_Class anwendbar sind und somit Ausgabetypen darstellen."@de;
+  sdo:name "Output Types"@de .
 
 <http://example.org/111> a wd:Q1469824;
-  sdo:name "Activity Types"@de;
-  sdo:description "Die Arten der Forschungstätigkeit."@de;
-  sdo:about "Ressourcentyp, Medientyp"@de;
+  wdt:P126 "euroCRIS"@de;
   wdt:P973 <https://w3id.org/cerif/vocab/ActivityTypes>;
-  wdt:P126 "euroCRIS"@de .
+  sdo:about "Ressourcentyp, Medientyp"@de;
+  sdo:description "Die Arten der Forschungstätigkeit."@de;
+  sdo:name "Activity Types"@de .
 
 <http://example.org/112> a wd:Q1469824;
-  sdo:name "Activity Subtypes"@de;
-  sdo:description "Die Subtypen einer Aktivität, die für eine spezifischere oder feinere Analyse verwendet werden."@de;
-  sdo:about "Ressourcentyp, Medientyp"@de;
+  wdt:P126 "euroCRIS"@de;
   wdt:P973 <https://w3id.org/cerif/vocab/ActivitySubtypes>;
-  wdt:P126 "euroCRIS"@de .
+  sdo:about "Ressourcentyp, Medientyp"@de;
+  sdo:description "Die Subtypen einer Aktivität, die für eine spezifischere oder feinere Analyse verwendet werden."@de;
+  sdo:name "Activity Subtypes"@de .
 
 <http://example.org/113> a wd:Q1469824;
-  sdo:name "Portfolio Taxonomie"@de;
-  sdo:description "n/A"@de;
-  sdo:about "Ressourcentyp, Medientyp"@de;
+  wdt:P126 "Universität für angewandte Kunst Wien"@de;
   wdt:P973 <https://voc.uni-ak.ac.at/skosmos/potax/de/>;
-  wdt:P126 "Universität für angewandte Kunst Wien"@de .
+  sdo:about "Ressourcentyp, Medientyp"@de;
+  sdo:description "n/A"@de;
+  sdo:name "Portfolio Taxonomie"@de .
 
 <http://example.org/114> a wd:Q1469824;
-  sdo:name "Portfolio Vokabular"@de;
-  sdo:description "n/A"@de;
-  sdo:about "Ressourcentyp, Medientyp"@de;
+  wdt:P126 "Universität für angewandte Kunst Wien"@de;
   wdt:P973 <https://voc.uni-ak.ac.at/skosmos/povoc/de/>;
-  wdt:P126 "Universität für angewandte Kunst Wien"@de .
+  sdo:about "Ressourcentyp, Medientyp"@de;
+  sdo:description "n/A"@de;
+  sdo:name "Portfolio Vokabular"@de .
 
 <http://example.org/115> a wd:Q1469824;
-  sdo:name "Publikationstypen"@de;
-  sdo:description "Liste von Publikationstypen."@de;
-  sdo:about "Ressourcentyp, Medientyp"@de;
+  wdt:P126 "Universität für angewandte Kunst Wien"@de;
   wdt:P973 <https://voc.uni-ak.ac.at/skosmos/publikationstypen/de/>;
-  wdt:P126 "Universität für angewandte Kunst Wien"@de .
+  sdo:about "Ressourcentyp, Medientyp"@de;
+  sdo:description "Liste von Publikationstypen."@de;
+  sdo:name "Publikationstypen"@de .
 
 <http://example.org/116> a wd:Q1469824;
-  sdo:name "Angewandte Schlagwörter"@de;
-  sdo:description "Liste angewandter Schlagworte."@de;
-  sdo:about "Schlagworte"@de;
+  wdt:P126 "Universität für angewandte Kunst Wien"@de;
   wdt:P973 <https://voc.uni-ak.ac.at/skosmos/basekw/de/>;
-  wdt:P126 "Universität für angewandte Kunst Wien"@de .
+  sdo:about "Schlagworte"@de;
+  sdo:description "Liste angewandter Schlagworte."@de;
+  sdo:name "Angewandte Schlagwörter"@de .
 
 <http://example.org/117> a wd:Q1469824;
-  sdo:name "encoding Format"@de;
-  sdo:description "Ein Schema oder ein Standard, der zur Kodierung des digitalen Inhalts einer Ressource verwendet wird."@de;
-  sdo:about "Ressourcentyp, Medientyp"@de;
+  wdt:P126 "Library Of Congress"@de;
   wdt:P973 <http://id.loc.gov/vocabulary/mencformat>;
-  wdt:P126 "Library Of Congress"@de .
+  sdo:about "Ressourcentyp, Medientyp"@de;
+  sdo:description "Ein Schema oder ein Standard, der zur Kodierung des digitalen Inhalts einer Ressource verwendet wird."@de;
+  sdo:name "encoding Format"@de .
 
 <http://example.org/118> a wd:Q1469824;
-  sdo:name "File Type"@de;
-  sdo:description "Allgemeine Art des in einer Computerdatei kodierten Dateninhalts"@de;
-  sdo:about "Ressourcentyp, Medientyp"@de;
+  wdt:P126 "Library Of Congress"@de;
   wdt:P973 <http://id.loc.gov/vocabulary/mfiletype>;
-  wdt:P126 "Library Of Congress"@de .
+  sdo:about "Ressourcentyp, Medientyp"@de;
+  sdo:description "Allgemeine Art des in einer Computerdatei kodierten Dateninhalts"@de;
+  sdo:name "File Type"@de .
 
 <http://example.org/119> a wd:Q1469824;
-  sdo:name "Media Types"@de;
-  sdo:description "Das Schema der Medientypen ist von einer kontrollierten Liste von Werten abgeleitet, die den allgemeinen Typ des Vermittlungsgeräts widerspiegeln, das erforderlich ist, um den Inhalt einer Ressource anzuzeigen, abzuspielen, auszuführen usw., und das hauptsächlich in der RDA-Katalogisierung verwendet wird."@de;
-  sdo:about "Ressourcentyp, Medientyp"@de;
+  wdt:P126 "Library Of Congress"@de;
   wdt:P973 <http://id.loc.gov/vocabulary/mediaTypes>;
-  wdt:P126 "Library Of Congress"@de .
+  sdo:about "Ressourcentyp, Medientyp"@de;
+  sdo:description "Das Schema der Medientypen ist von einer kontrollierten Liste von Werten abgeleitet, die den allgemeinen Typ des Vermittlungsgeräts widerspiegeln, das erforderlich ist, um den Inhalt einer Ressource anzuzeigen, abzuspielen, auszuführen usw., und das hauptsächlich in der RDA-Katalogisierung verwendet wird."@de;
+  sdo:name "Media Types"@de .
 
 <http://example.org/120> a wd:Q1469824;
-  sdo:name "Content Types"@de;
-  sdo:description "Das Schema der Inhaltstypen ist von einer kontrollierten Liste von Werten abgeleitet, die die Form der Kommunikation darstellen, durch die ein Werk ausgedrückt wird und die hauptsächlich in der RDA-Katalogisierung verwendet wird."@de;
-  sdo:about "Ressourcentyp, Medientyp"@de;
+  wdt:P126 "Library Of Congress"@de;
   wdt:P973 <http://id.loc.gov/vocabulary/contentTypes>;
-  wdt:P126 "Library Of Congress"@de .
+  sdo:about "Ressourcentyp, Medientyp"@de;
+  sdo:description "Das Schema der Inhaltstypen ist von einer kontrollierten Liste von Werten abgeleitet, die die Form der Kommunikation darstellen, durch die ein Werk ausgedrückt wird und die hauptsächlich in der RDA-Katalogisierung verwendet wird."@de;
+  sdo:name "Content Types"@de .
 
 <http://example.org/121> a wd:Q1469824;
-  sdo:name "Work Type"@de;
-  sdo:description "Liste von Werktypen, die ORCID unterstützt."@de;
-  sdo:about "Ressourcentyp, Medientyp"@de;
-  wdt:P973 <https://web.archive.org/web/20231219115237/https://info.orcid.org/ufaqs/what-work-types-does-orcid-support/>;
+  wdt:P7374 "Hochschule"@de;
   wdt:P126 "ORCID"@de;
-  wdt:P7374 "Hochschule"@de .
+  wdt:P973 <https://web.archive.org/web/20231219115237/https://info.orcid.org/ufaqs/what-work-types-does-orcid-support/>;
+  sdo:about "Ressourcentyp, Medientyp"@de;
+  sdo:description "Liste von Werktypen, die ORCID unterstützt."@de;
+  sdo:name "Work Type"@de .
 
 <http://example.org/122> a wd:Q1469824;
-  sdo:name "Content Types"@de;
-  sdo:about "Ressourcentyp, Medientyp"@de;
+  wdt:P126 "Registry Of Research Data repositories"@de;
   wdt:P973 <https://www.re3data.org/browse/>;
-  wdt:P126 "Registry Of Research Data repositories"@de .
+  sdo:about "Ressourcentyp, Medientyp"@de;
+  sdo:name "Content Types"@de .
 
 <http://example.org/123> a wd:Q1469824;
-  sdo:name "Media Types"@de;
-  sdo:description "Verzeichnis der IANA Medientypen."@de;
-  sdo:about "Ressourcentyp, Medientyp"@de;
+  wdt:P126 "IANA"@de;
   wdt:P973 <https://www.iana.org/assignments/media-types/media-types.xhtml>;
-  wdt:P126 "IANA"@de .
+  sdo:about "Ressourcentyp, Medientyp"@de;
+  sdo:description "Verzeichnis der IANA Medientypen."@de;
+  sdo:name "Media Types"@de .
 
 <http://example.org/124> a wd:Q1469824;
-  sdo:name "Item Types"@de;
-  sdo:description "Artikeltypen bei Zotero."@de;
-  sdo:about "Ressourcentyp, Medientyp"@de;
+  wdt:P126 "Zotero"@de;
   wdt:P973 <https://www.zotero.org/support/kb/item_types_and_fields>;
-  wdt:P126 "Zotero"@de .
+  sdo:about "Ressourcentyp, Medientyp"@de;
+  sdo:description "Artikeltypen bei Zotero."@de;
+  sdo:name "Item Types"@de .
 
 <http://example.org/125> a wd:Q1469824;
-  sdo:name "ICOPER Learning Resource Types (European Schoolnet Vocabulary)"@de;
-  sdo:description "Werte für Lernressourcentypen zur Verwendung in ICOPER-Metadaten für die Eigenschaft LOM-Lernressourcentyp."@de;
-  sdo:about "Ressourcentyp, Medientyp"@de;
+  wdt:P126 "European Schoolnet Vocabulary Bank for Education"@de;
   wdt:P973 <http://europeanschoolnet-vbe.lexaurus.net/vbe/browse>;
-  wdt:P126 "European Schoolnet Vocabulary Bank for Education"@de .
+  sdo:about "Ressourcentyp, Medientyp"@de;
+  sdo:description "Werte für Lernressourcentypen zur Verwendung in ICOPER-Metadaten für die Eigenschaft LOM-Lernressourcentyp."@de;
+  sdo:name "ICOPER Learning Resource Types (European Schoolnet Vocabulary)"@de .
 
 <http://example.org/126> a wd:Q1469824;
-  sdo:name "LRE Learning Resource Types (European Schoolnet Vocabulary)"@de;
-  sdo:description "Dieses Vokabular liefert Werte, die die Art(en) des Lernobjekts oder die potenzielle(n) pädagogische(n) Verwendung(en) des Lernobjekts angeben. Es gibt zwei Kategorien von Lernobjekten: Lernressourcen und Lernobjekte. Ein „Lernobjekt“ ist ein einfaches atomares Objekt (z. B. ein Bild, eine Audio- oder eine Videodatei), während eine „Lernressource“ ein ausführlicheres Lernmaterial wie ein Kurs oder ein Unterrichtsplan ist. Lernmittel und Lernressourcen unterstützen unterschiedliche Phasen der Entwicklung und Bereitstellung von Lerninhalten. Es ist wichtig, keine Vermischung von „Assets“ und „Lernressourcen“ zuzulassen. Für dieses Element sollten ein oder mehrere Werte ausgewählt werden. Die Elemente sind so geordnet, dass der erste Wert den wichtigsten angibt."@de;
-  sdo:about "Ressourcentyp, Medientyp"@de;
+  wdt:P126 "European Schoolnet Vocabulary Bank for Education"@de;
   wdt:P973 <http://europeanschoolnet-vbe.lexaurus.net/vbe/browse>;
-  wdt:P126 "European Schoolnet Vocabulary Bank for Education"@de .
+  sdo:about "Ressourcentyp, Medientyp"@de;
+  sdo:description "Dieses Vokabular liefert Werte, die die Art(en) des Lernobjekts oder die potenzielle(n) pädagogische(n) Verwendung(en) des Lernobjekts angeben. Es gibt zwei Kategorien von Lernobjekten: Lernressourcen und Lernobjekte. Ein „Lernobjekt“ ist ein einfaches atomares Objekt (z. B. ein Bild, eine Audio- oder eine Videodatei), während eine „Lernressource“ ein ausführlicheres Lernmaterial wie ein Kurs oder ein Unterrichtsplan ist. Lernmittel und Lernressourcen unterstützen unterschiedliche Phasen der Entwicklung und Bereitstellung von Lerninhalten. Es ist wichtig, keine Vermischung von „Assets“ und „Lernressourcen“ zuzulassen. Für dieses Element sollten ein oder mehrere Werte ausgewählt werden. Die Elemente sind so geordnet, dass der erste Wert den wichtigsten angibt."@de;
+  sdo:name "LRE Learning Resource Types (European Schoolnet Vocabulary)"@de .
 
 <http://example.org/127> a wd:Q1469824;
-  sdo:name "NSDL Resource Type Values (European Schoolnet Vocabulary)"@de;
-  sdo:description "Ausführliche Liste von Ressourcentypen."@de;
-  sdo:about "Ressourcentyp, Medientyp"@de;
+  wdt:P126 "European Schoolnet Vocabulary Bank for Education"@de;
   wdt:P973 <http://europeanschoolnet-vbe.lexaurus.net/vbe/browse>;
-  wdt:P126 "European Schoolnet Vocabulary Bank for Education"@de .
+  sdo:about "Ressourcentyp, Medientyp"@de;
+  sdo:description "Ausführliche Liste von Ressourcentypen."@de;
+  sdo:name "NSDL Resource Type Values (European Schoolnet Vocabulary)"@de .
 
 <http://example.org/128> a wd:Q1469824;
-  sdo:name "Barrierefreie-Informationstechnik-Verordnung 2.0 (BITV) "@de;
-  sdo:description "Portal zur Barrierefreie-Informationstechnik-Verordnung (BITV 2.0), das verschiedene relevante Listen und Begriffe enthält."@de;
-  sdo:about "Barrierearmut"@de;
-  dct:issued "2011"^^xsd:date;
+  wdt:P126 "Bundesregierung"@de;
   wdt:P973 <https://web.archive.org/web/20240303113437/https://www.barrierefreiheit-dienstekonsolidierung.bund.de/Webs/PB/DE/gesetze-und-richtlinien/bitv2-0/bitv2-0-node.html>;
-  wdt:P126 "Bundesregierung"@de .
+  dct:issued "2011"^^xsd:date;
+  sdo:about "Barrierearmut"@de;
+  sdo:description "Portal zur Barrierefreie-Informationstechnik-Verordnung (BITV 2.0), das verschiedene relevante Listen und Begriffe enthält."@de;
+  sdo:name "Barrierefreie-Informationstechnik-Verordnung 2.0 (BITV) "@de .
 
 <http://example.org/129> a wd:Q1469824;
-  sdo:name "Web Content Accessibility Guidelines 2.1"@de;
-  sdo:description "Liste relevanter Begriffe im Kontext von Barrierefreiheit."@de;
-  sdo:about "Barrierearmut"@de;
+  wdt:P126 "W3C"@de;
   wdt:P973 <https://www.w3.org/TR/WCAG21/>;
-  wdt:P126 "W3C"@de .
+  sdo:about "Barrierearmut"@de;
+  sdo:description "Liste relevanter Begriffe im Kontext von Barrierefreiheit."@de;
+  sdo:name "Web Content Accessibility Guidelines 2.1"@de .
 
 <http://example.org/130> a wd:Q1469824;
-  sdo:name "Web Content Accessibility Guidelines 3.0"@de;
-  sdo:description "Liste relevanter Begriffe im Kontext von Barrierefreiheit."@de;
-  sdo:about "Barrierearmut"@de;
+  wdt:P126 "W3C"@de;
   wdt:P973 <https://www.w3.org/TR/wcag-3.0/>;
-  wdt:P126 "W3C"@de .
+  sdo:about "Barrierearmut"@de;
+  sdo:description "Liste relevanter Begriffe im Kontext von Barrierefreiheit."@de;
+  sdo:name "Web Content Accessibility Guidelines 3.0"@de .
 
 <http://example.org/131> a wd:Q1469824;
-  sdo:name "EUN SEN Access Mode Values"@de;
-  sdo:description "Dieses Vokabular beschreibt das menschliche sensorische Wahrnehmungssystem oder das kognitive Vermögen, durch das eine Person Informationen verarbeiten oder wahrnehmen kann."@de;
-  sdo:about "Barrierearmut"@de;
+  wdt:P126 "European Schoolnet Vocabulary Bank for Education"@de;
   wdt:P973 <http://europeanschoolnet-vbe.lexaurus.net/vbe/browse>;
-  wdt:P126 "European Schoolnet Vocabulary Bank for Education"@de .
+  sdo:about "Barrierearmut"@de;
+  sdo:description "Dieses Vokabular beschreibt das menschliche sensorische Wahrnehmungssystem oder das kognitive Vermögen, durch das eine Person Informationen verarbeiten oder wahrnehmen kann."@de;
+  sdo:name "EUN SEN Access Mode Values"@de .
 
 <http://example.org/132> a wd:Q1469824;
-  sdo:name "Barrierefreiheitssiegel"@de;
-  sdo:description "Liste von Barrierefreiheitssiegeln. Entstanden im Kontext des OpenEduHub."@de;
-  sdo:about "Barrierearmut"@de;
+  wdt:P126 "WirLernenOnline"@de;
   wdt:P973 <http://w3id.org/openeduhub/vocabs/accessibilitySummary/>;
-  wdt:P126 "WirLernenOnline"@de .
+  sdo:about "Barrierearmut"@de;
+  sdo:description "Liste von Barrierefreiheitssiegeln. Entstanden im Kontext des OpenEduHub."@de;
+  sdo:name "Barrierefreiheitssiegel"@de .
 
 <http://example.org/133> a wd:Q1469824;
-  sdo:name "Schema.org Accessibility Properties for Discoverability Vocabulary"@de;
-  sdo:description "Vokabular zur Abbildung von Accesiblity Eigenschaften."@de;
-  sdo:about "Barrierearmut"@de;
+  wdt:P126 "W3C"@de;
   wdt:P973 <https://www.w3.org/community/reports/a11y-discov-vocab/CG-FINAL-vocabulary-20241209/#accessibilityFeature-vocabulary>;
-  wdt:P126 "W3C"@de .
+  sdo:about "Barrierearmut"@de;
+  sdo:description "Vokabular zur Abbildung von Accesiblity Eigenschaften."@de;
+  sdo:name "Schema.org Accessibility Properties for Discoverability Vocabulary"@de .
 
 <http://example.org/134> a wd:Q1469824;
-  sdo:name "Zugänglichkeitsformat"@de;
-  sdo:about "Barrierearmut"@de;
-  dct:issued "02/2024, v12"^^xsd:date;
+  wdt:P126 "Common Education Data Standards"@de;
   wdt:P973 <https://ceds.ed.gov/elements.aspx>;
-  wdt:P126 "Common Education Data Standards"@de .
+  dct:issued "02/2024, v12"^^xsd:date;
+  sdo:about "Barrierearmut"@de;
+  sdo:name "Zugänglichkeitsformat"@de .
 
 <http://example.org/135> a wd:Q1469824;
-  sdo:name "Anpassungsarten"@de;
-  sdo:description "Anpassungsarten der PBS Lernplattform."@de;
-  sdo:about "Barrierearmut"@de;
+  wdt:P126 "PBS Learning Media"@de;
   wdt:P973 <https://www.pbslearningmedia.org/search/>;
-  wdt:P126 "PBS Learning Media"@de .
+  sdo:about "Barrierearmut"@de;
+  sdo:description "Anpassungsarten der PBS Lernplattform."@de;
+  sdo:name "Anpassungsarten"@de .
 
 <http://example.org/136> a wd:Q1469824;
-  sdo:name "AccessibleOCW Ontology"@de;
-  sdo:description "OpenCourseWare (OCW) systems have been established to provide open educational resources that are accessible by anyone, including learners with special accessibility needs and preferences. We need to find a formal and interoperable way to describe these preferences in order to use them in OCW systems and retrieve relevant educational resources. This formal representation should use standard accessibility definitions of OCW that can be reused by other OCW systems to represent accessibility concepts. In this article, we present an ontology to represent the accessibility needs of learners with respect to the IMS AfA specifications. The ontology definitions together with rule-based queries are used to retrieve relevant educational resources. Related to this, we developed a user interface component that enables users to create accessibility profiles representing their individual needs and preferences based on our ontology. We evaluated the approach with five examples profiles."@de;
-  sdo:about "Barrierearmut"@de;
-  dct:issued "2018-11-29"^^xsd:date;
+  wdt:P126 "Mirette Elias, Steffen Lohmann Sören Auer"@de;
   wdt:P973 <https://doi.org/10.3390/info9120302>;
-  wdt:P126 "Mirette Elias, Steffen Lohmann Sören Auer"@de .
+  dct:issued "2018-11-29"^^xsd:date;
+  sdo:about "Barrierearmut"@de;
+  sdo:description "OpenCourseWare (OCW) systems have been established to provide open educational resources that are accessible by anyone, including learners with special accessibility needs and preferences. We need to find a formal and interoperable way to describe these preferences in order to use them in OCW systems and retrieve relevant educational resources. This formal representation should use standard accessibility definitions of OCW that can be reused by other OCW systems to represent accessibility concepts. In this article, we present an ontology to represent the accessibility needs of learners with respect to the IMS AfA specifications. The ontology definitions together with rule-based queries are used to retrieve relevant educational resources. Related to this, we developed a user interface component that enables users to create accessibility profiles representing their individual needs and preferences based on our ontology. We evaluated the approach with five examples profiles."@de;
+  sdo:name "AccessibleOCW Ontology"@de .
 
 <http://example.org/137> a wd:Q1469824;
-  sdo:name "interactivity Type"@de;
-  sdo:about "Lehr-/Lernform (Interaktivitätstyp)"@de .
+  sdo:about "Lehr-/Lernform (Interaktivitätstyp)"@de;
+  sdo:name "interactivity Type"@de .
 
 <http://example.org/138> a wd:Q1469824;
-  sdo:name "Lernmodus "@de;
-  sdo:description "Vorwiegender Lernmodus."@de;
-  sdo:about "Lehr-/Lernform (Interaktivitätstyp)"@de;
+  wdt:P126 "WirLernenOnline"@de;
   wdt:P973 <http://w3id.org/openeduhub/vocabs/learningMode/>;
-  wdt:P126 "WirLernenOnline"@de .
+  sdo:about "Lehr-/Lernform (Interaktivitätstyp)"@de;
+  sdo:description "Vorwiegender Lernmodus."@de;
+  sdo:name "Lernmodus "@de .
 
 <http://example.org/139> a wd:Q1469824;
-  sdo:name "Taxonomie von Interaktivität"@de;
-  sdo:description "Taxonomien von Interaktivität, bspw. eine sechsstufige Differenzierung des Interaktivitätsniveaus nach Schulmeister, 2002:"@de;
-  sdo:about "Lehr-/Lernform (Interaktivitätstyp)"@de;
-  dct:issued "2002-04"^^xsd:date;
+  wdt:P126 "Rolf Schumeister"@de;
   wdt:P973 <http://rolf.schulmeister.com/pdfs/interaktivitaet.pdf>;
-  wdt:P126 "Rolf Schumeister"@de .
+  dct:issued "2002-04"^^xsd:date;
+  sdo:about "Lehr-/Lernform (Interaktivitätstyp)"@de;
+  sdo:description "Taxonomien von Interaktivität, bspw. eine sechsstufige Differenzierung des Interaktivitätsniveaus nach Schulmeister, 2002:"@de;
+  sdo:name "Taxonomie von Interaktivität"@de .
 
 <http://example.org/140> a wd:Q1469824;
-  sdo:name "Learning Resource Interaction Mode"@de;
-  sdo:about "Lehr-/Lernform (Interaktivitätstyp)"@de .
+  sdo:about "Lehr-/Lernform (Interaktivitätstyp)"@de;
+  sdo:name "Learning Resource Interaction Mode"@de .
 
 <http://example.org/141> a wd:Q1469824;
-  sdo:name "Medieneigenschaften"@de;
-  sdo:description "Medieneigenschaften einer Ressource."@de;
-  sdo:about "Lehr-/Lernform (Interaktivitätstyp)"@de;
+  wdt:P126 "e-teaching.org"@de;
   wdt:P973 <https://web.archive.org/web/20230929165323/https://www.e-teaching.org/community/digital-learning-map/faq#characteristics>;
-  wdt:P126 "e-teaching.org"@de .
+  sdo:about "Lehr-/Lernform (Interaktivitätstyp)"@de;
+  sdo:description "Medieneigenschaften einer Ressource."@de;
+  sdo:name "Medieneigenschaften"@de .
 
 <http://example.org/142> a wd:Q1469824;
-  sdo:name "Lehraktionsform  (Rolle der Lehrenden)"@de;
-  sdo:about "Lehr-/Lernform (Interaktivitätstyp)"@de .
+  sdo:about "Lehr-/Lernform (Interaktivitätstyp)"@de;
+  sdo:name "Lehraktionsform  (Rolle der Lehrenden)"@de .
 
 <http://example.org/143> a wd:Q1469824;
-  sdo:name "Organisationsform"@de;
-  sdo:about "Lehr-/Lernform (Interaktivitätstyp)"@de;
+  wdt:P126 "digital.edu"@de;
   wdt:P973 <https://digitaledu.ro/activitati-de-invatare-digitala/>;
-  wdt:P126 "digital.edu"@de .
+  sdo:about "Lehr-/Lernform (Interaktivitätstyp)"@de;
+  sdo:name "Organisationsform"@de .
 
 <http://example.org/144> a wd:Q1469824;
-  sdo:name "sind alles keine maschinenlesbaren Werte"@de;
-  sdo:about "Lehrformat, Veranstaltungsformat, Lehrmodus"@de .
+  sdo:about "Lehrformat, Veranstaltungsformat, Lehrmodus"@de;
+  sdo:name "sind alles keine maschinenlesbaren Werte"@de .
 
 <http://example.org/145> a wd:Q1469824;
-  sdo:name "EU - Lizenz"@de;
-  sdo:description "Verzeichnis von Lizenzen der Europäischen Union."@de;
-  sdo:about "Lizenzen"@de;
+  wdt:P126 "Europäische Union"@de;
   wdt:P973 <https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence>;
-  wdt:P126 "Europäische Union"@de .
+  sdo:about "Lizenzen"@de;
+  sdo:description "Verzeichnis von Lizenzen der Europäischen Union."@de;
+  sdo:name "EU - Lizenz"@de .
 
 <http://example.org/146> a wd:Q1469824;
-  sdo:name "DCAT-AP"@de;
-  sdo:description "Liste der Lizenzen, die im Feld dct:license einer DCAT-AP.de-konformen dcat:distribution für die Zulieferung an GovData erlaubt sind. GovData empfiehlt die Verwendung der Datenlizenz Deutschland 2.0 (Zero oder Namensnennung) sowie der Creative Commons Namensnennung – 4.0 International. Soweit dies nicht möglich sein sollte, wird die Verwendung einer der übrigen zur „freien Nutzung“ ausgewiesenen Lizenzen in der jeweils neuesten Version empfohlen."@de;
-  sdo:about "Lizenzen"@de;
+  wdt:P126 "Föderale IT-Kooperation"@de;
   wdt:P973 <https://www.dcat-ap.de/def/licenses/>;
-  wdt:P126 "Föderale IT-Kooperation"@de .
+  sdo:about "Lizenzen"@de;
+  sdo:description "Liste der Lizenzen, die im Feld dct:license einer DCAT-AP.de-konformen dcat:distribution für die Zulieferung an GovData erlaubt sind. GovData empfiehlt die Verwendung der Datenlizenz Deutschland 2.0 (Zero oder Namensnennung) sowie der Creative Commons Namensnennung – 4.0 International. Soweit dies nicht möglich sein sollte, wird die Verwendung einer der übrigen zur „freien Nutzung“ ausgewiesenen Lizenzen in der jeweils neuesten Version empfohlen."@de;
+  sdo:name "DCAT-AP"@de .
 
 <http://example.org/147> a wd:Q1469824;
-  sdo:name "SPDX License List"@de;
-  sdo:description "Die SPDX-Lizenzliste ist ein integraler Bestandteil der SPDX-Spezifikation. Die SPDX-Lizenzliste selbst ist eine Liste von häufig vorkommenden Lizenzen und Ausnahmen, die in freier und offener oder gemeinschaftlicher Software, Daten, Hardware oder Dokumentation verwendet werden. Die SPDX-Lizenzliste enthält einen standardisierten Kurzbezeichner, den vollständigen Namen, den Lizenztext und eine kanonische permanente URL für jede Lizenz und Ausnahme. "@de;
-  sdo:about "Lizenzen"@de;
-  wdt:P973 <https://spdx.org/licenses/>;
+  wdt:P1324 "https://github.com/spdx/license-list-data"@de;
   wdt:P126 "SPDX Workgroup"@de;
-  wdt:P1324 "https://github.com/spdx/license-list-data"@de .
+  wdt:P973 <https://spdx.org/licenses/>;
+  sdo:about "Lizenzen"@de;
+  sdo:description "Die SPDX-Lizenzliste ist ein integraler Bestandteil der SPDX-Spezifikation. Die SPDX-Lizenzliste selbst ist eine Liste von häufig vorkommenden Lizenzen und Ausnahmen, die in freier und offener oder gemeinschaftlicher Software, Daten, Hardware oder Dokumentation verwendet werden. Die SPDX-Lizenzliste enthält einen standardisierten Kurzbezeichner, den vollständigen Namen, den Lizenztext und eine kanonische permanente URL für jede Lizenz und Ausnahme. "@de;
+  sdo:name "SPDX License List"@de .
 
 <http://example.org/148> a wd:Q1469824;
-  sdo:name "Portfolio Standard Lizenzen"@de;
-  sdo:description "Liste von Lizenzen."@de;
-  sdo:about "Lizenzen"@de;
+  wdt:P126 "Universität für angewandte Kunst Wien"@de;
   wdt:P973 <http://base.uni-ak.ac.at/portfolio/licenses/core>;
-  wdt:P126 "Universität für angewandte Kunst Wien"@de .
+  sdo:about "Lizenzen"@de;
+  sdo:description "Liste von Lizenzen."@de;
+  sdo:name "Portfolio Standard Lizenzen"@de .
 
 <http://example.org/149> a wd:Q1469824;
-  sdo:name "Aggregationslevel"@de;
-  sdo:description "Eine Wertelliste für Einordnungen in Unterrichtsplanung, entstanden im Kontext des OpenEduHub. Erweiterung von LOMv1.0"@de;
-  sdo:about "Granularität"@de;
+  wdt:P126 "WirLernenOnline"@de;
   wdt:P973 <http://w3id.org/openeduhub/vocabs/aggregationLevel/>;
-  wdt:P126 "WirLernenOnline"@de .
+  sdo:about "Granularität"@de;
+  sdo:description "Eine Wertelliste für Einordnungen in Unterrichtsplanung, entstanden im Kontext des OpenEduHub. Erweiterung von LOMv1.0"@de;
+  sdo:name "Aggregationslevel"@de .

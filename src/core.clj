@@ -12,7 +12,7 @@
           data (nthrest rows 3)]
       (mapv #(zipmap headers (map (fn [value] (if (clojure.string/blank? value) nil value)) %)) data))))
 
-(def base-uri "http://example.org/")
+(def base-uri "https://w3id.org/eduvocs/id/")
 
 (def prefixes
   {"rdf" "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -22,7 +22,7 @@
    "wd"  "http://www.wikidata.org/entity/"
    "xsd" "http://www.w3.org/2001/XMLSchema#"
    "dcat" "https://www.w3.org/ns/dcat#"
-   "eduvocs" "https://eduvocs/"})
+   "eduvocs" "https://w3id.org/eduvocs/terms/"})
 
 (defn make-uri [suffix]
   (java.net.URI. (str base-uri suffix)))
@@ -34,7 +34,9 @@
   [
    [:name "https://schema.org/name" #(gpr/->LangString (clean-langstring %) :de)]
    [:title "http://purl.org/dc/terms/title" #(gpr/->LangString (clean-langstring %) :de)]
+   [:title.en "http://purl.org/dc/terms/title" #(gpr/->LangString (clean-langstring %) :en)]
    [:description "http://purl.org/dc/terms/description" #(gpr/->LangString (clean-langstring %) :de)]
+   [:description.en "http://purl.org/dc/terms/description" #(gpr/->LangString (clean-langstring %) :en)]
    [:creator "http://purl.org/dc/terms/creator" #(gpr/->LangString (clean-langstring %) :de)]
    [:about "https://schema.org/about" #(gpr/->LangString (clean-langstring %) :de)]
    [:issued "http://purl.org/dc/terms/issued" #(gpr/literal % "http://www.w3.org/2001/XMLSchema#date")]
@@ -55,7 +57,7 @@
    [:repo "http://www.wikidata.org/prop/direct/P1324" #(java.net.URI. %)]
    [:endpointUrl "https://www.w3.org/ns/dcat#endpointURL" #(java.net.URI. %)]
    [:educationalLevel "https://schema.org/educationalLevel" #(gpr/->LangString (clean-langstring %) :de)]
-   [:rawVocab "https://eduvocs/rawVocab" #(gpr/->LangString (clean-langstring %) :de)]
+   [:rawVocab "https://w3id.org/eduvocs/terms/rawVocab" #(gpr/->LangString (clean-langstring %) :de)]
    [:complies_with "http://www.wikidata.org/prop/direct/P5009" #(gpr/->LangString (clean-langstring %) :de)]
   ]
 )

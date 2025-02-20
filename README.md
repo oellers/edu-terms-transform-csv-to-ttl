@@ -2,4 +2,6 @@
 
 Zur Transformation der Vokabularinformationen.
 
-`clj -M -m core resources/Vokabulare.csv resources/Vokabulare.ttl`
+`clj -M -m core resources/vocs.csv resources/vocs.ttl`
+
+`clojure -M -m core resources/vocs.csv resources/vocs.ttl`
